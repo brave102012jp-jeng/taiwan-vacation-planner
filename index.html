@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>台灣假期活動規劃</title>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --paper:#F7F4EC;
+    --paper-2:#EFE9DA;
+    --lantern:#C1442E;
+    --lantern-dim:#e7c9c2;
+    --gold:#C8973A;
+    --teal:#2F6F62;
+    --teal-dim:#cfe0da;
+    --line:#d8d0bd;
+    --text:#2A2A28;
+    --text-dim:#6b6558;
+    --white:#FFFDF8;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--text);
+    font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; line-height:1.5;
+  }
+  h1,h2,h3{font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; color:var(--ink); margin:0 0 8px;}
+  .wrap{max-width:1120px;margin:0 auto;padding:28px 20px 80px;}
+  header.top{
+    display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    border-bottom:3px solid var(--ink); padding-bottom:16px; margin-bottom:22px;
+  }
+  header.top .eyebrow{
+    font-size:12px; letter-spacing:.18em; color:var(--lantern); font-weight:700; display:block; margin-bottom:4px;
+  }
+  header.top h1{font-size:30px; font-weight:900;}
+  header.top .sub{color:var(--text-dim); font-size:13px; max-width:560px;}
+  .toolbar{display:flex; gap:8px; flex-wrap:wrap;}
+  button{
+    font-family:inherit; font-size:13px; font-weight:700; cursor:pointer;
+    border:1.5px solid var(--ink); background:var(--white); color:var(--ink);
+    padding:8px 14px; border-radius:999px; transition:.15s;
+  }
+  button:hover{background:var(--ink); color:var(--white);}
+  button.primary{background:var(--lantern); border-color:var(--lantern); color:var(--white);}
+  button.primary:hover{background:#a3341f;}
+  button.ghost{border-color:var(--line); color:var(--text-dim);}
+  button.ghost:hover{background:var(--paper-2); color:var(--text);}
+  button.small{padding:4px 10px; font-size:11.5px;}
+  button:disabled{opacity:.35; cursor:not-allowed; background:var(--white); color:var(--ink);}
+  button:focus-visible, input:focus-visible, .chip:focus-visible{outline:2px solid var(--teal); outline-offset:2px;}
+
+  section{margin-bottom:34px;}
+
+  .data-status{
+    font-size:12px; padding:8px 12px; border-radius:6px; margin-bottom:18px;
+    background:var(--paper-2); color:var(--text-dim); border:1px solid var(--line);
+    display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+  }
+  .data-status.ok{background:#e6f0ec; color:#1f5548; border-color:#b8d5ca;}
+  .data-status.warn{background:#fdf5e3; color:#8a6a1c; border-color:#e6d09f;}
+  .data-status.err{background:#f8e2dc; color:#7a2a1a; border-color:#dfab9f;}
+  .data-status .badge{
+    font-weight:700; padding:2px 8px; border-radius:999px; background:rgba(0,0,0,.06); font-size:11px;
+  }
+  .panel{
+    background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;
+  }
+  .filter-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;}
+  .filter-block h3{font-size:14px; display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;}
+  .filter-block h3 .selectall{font-size:11px; font-weight:700; color:var(--teal); cursor:pointer; user-select:none; border-bottom:1px dotted var(--teal);}
+  .chip-list{display:flex; flex-wrap:wrap; gap:6px;}
+  .chip{
+    font-size:12.5px; padding:5px 11px; border-radius:999px; border:1.3px solid var(--line);
+    background:var(--paper); cursor:pointer; user-select:none; color:var(--text-dim);
+  }
+  .chip.active{background:var(--teal); border-color:var(--teal); color:var(--white); font-weight:700;}
+
+  /* venue picker: flat, color-coded by venueType */
+  .venue-tree{display:flex; flex-direction:column; gap:12px;}
+  .venue-vtype-section{border-top:1px solid var(--line); padding-top:10px;}
+  .venue-vtype-section:first-child{border-top:none; padding-top:0;}
+  .venue-vtype-head{
+    display:flex; align-items:center; gap:8px; margin-bottom:8px; font-size:13px;
+  }
+  .venue-vtype-dot{width:10px; height:10px; border-radius:50%; display:inline-block;}
+  .venue-vtype-name{font-weight:700; color:var(--ink);}
+  .venue-vtype-count{font-size:11px; color:var(--text-dim); margin-left:6px;}
+  .venue-vtype-head .mini-btn{
+    font-size:11px; color:var(--text-dim); background:var(--white); border:1px solid var(--line);
+    padding:3px 10px; border-radius:999px; cursor:pointer; font-family:inherit; margin-left:auto;
+  }
+  .venue-vtype-head .mini-btn:hover{background:var(--paper-2); color:var(--ink);}
+  .venue-vtype-body{display:flex; flex-wrap:wrap; gap:6px;}
+  .venue-chip{
+    display:inline-flex; align-items:center; gap:6px; padding:5px 11px 5px 8px; border-radius:999px;
+    border:1.3px solid var(--line); background:var(--paper); cursor:pointer; user-select:none;
+    font-size:12.5px; color:var(--text-dim); transition:.12s;
+  }
+  .venue-chip:hover{border-color:var(--vt-color, var(--line));}
+  .venue-chip.active{
+    background:var(--vt-color); border-color:var(--vt-color); color:var(--white); font-weight:700;
+  }
+  .venue-chip-dot{width:8px; height:8px; border-radius:50%; background:var(--vt-color, var(--line)); flex-shrink:0;}
+  .venue-chip.active .venue-chip-dot{background:var(--white);}
+  .venue-chip-region{
+    font-size:10px; opacity:.7; padding-left:6px; margin-left:4px; border-left:1px solid rgba(0,0,0,.15);
+  }
+  .venue-chip.active .venue-chip-region{border-left-color:rgba(255,255,255,.3);}
+  .search-row{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+  .search-row input[type=text]{
+    flex:1; min-width:180px; padding:9px 12px; border-radius:8px; border:1.3px solid var(--line);
+    font-family:inherit; font-size:13px; background:var(--paper);
+  }
+  .view-toggle{display:flex; gap:6px;}
+  .view-toggle button.active{background:var(--ink); color:var(--white);}
+
+  /* calendar (generic, reused by browse / picker / favorites) */
+  .cal-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; gap:8px;}
+  .cal-head .label{font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; font-weight:700; font-size:17px; color:var(--ink);}
+  #monthLabel{cursor:pointer; border-bottom:1px dashed var(--teal); user-select:none;}
+  #monthLabel:hover{color:var(--teal);}
+  .cal-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:6px;}
+  .cal-dow{text-align:center; font-size:11px; color:var(--text-dim); font-weight:700; padding-bottom:4px;}
+  .cal-cell{
+    min-height:74px; border:1px solid var(--line); border-radius:8px; padding:6px; background:var(--paper);
+    cursor:pointer; position:relative; transition:.12s;
+  }
+  .cal-cell:hover{border-color:var(--teal);}
+  .cal-cell.empty{background:transparent; border:none; cursor:default;}
+  .cal-cell.selected{border:2px solid var(--lantern); background:var(--white);}
+  .cal-cell.disabled{opacity:.3; cursor:not-allowed; background:transparent;}
+  .cal-cell .num{font-size:12px; font-weight:700; color:var(--ink);}
+  .cal-cell .dots{display:flex; flex-wrap:wrap; gap:3px; margin-top:5px;}
+  .dot{width:8px; height:8px; border-radius:50%; background:var(--teal);}
+  .dot.fav{box-shadow:0 0 0 2px var(--white), 0 0 0 3.5px var(--lantern);}
+  .cal-cell .more{font-size:10px; color:var(--text-dim); margin-top:2px;}
+
+  /* small variant used inside picker modal & favorites calendar */
+  .cal-grid.small .cal-cell{min-height:44px; padding:4px;}
+  .cal-grid.small .num{font-size:11px;}
+
+  .day-detail{margin-top:16px; border-top:1px dashed var(--line); padding-top:14px;}
+  .day-detail h4{font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; margin:0 0 10px; color:var(--lantern); font-size:15px;}
+
+  .event-card{
+    display:flex; gap:12px; align-items:flex-start; padding:12px 14px; border:1px solid var(--line);
+    border-radius:8px; margin-bottom:8px; background:var(--paper);
+  }
+  .event-card input[type=checkbox]{margin-top:3px; width:17px; height:17px; accent-color:var(--lantern); cursor:pointer;}
+  .event-card .meta{flex:1; min-width:0;}
+  .event-card .name{font-weight:700; color:var(--ink); font-size:14.5px;}
+  .event-card .tags{margin-top:3px; display:flex; flex-wrap:wrap; gap:5px;}
+  .tag{font-size:10.5px; padding:2px 8px; border-radius:999px; background:var(--teal-dim); color:var(--teal); font-weight:700;}
+  .tag.region{background:var(--lantern-dim); color:var(--lantern);}
+  .event-card .when{font-size:12px; color:var(--text-dim); margin-top:4px;}
+  .event-card .desc{font-size:12px; color:var(--text-dim); margin-top:4px;}
+  .event-card .links{margin-top:6px;}
+  .event-card .links a.link-arrow{color:var(--lantern); font-weight:700; text-decoration:none; font-size:12.5px;}
+  .event-card .links a.link-arrow.fb-link{color:var(--teal);}
+  .event-card .links a.link-arrow:hover{text-decoration:underline;}
+  .event-card .visit-row{
+    font-size:12px; margin-top:6px; padding:5px 9px; border-radius:6px; background:var(--gold); color:var(--white);
+    display:inline-flex; align-items:center; gap:8px; font-weight:700;
+  }
+  .event-card .visit-row button{
+    background:var(--white); color:var(--gold); border:none; padding:2px 9px; font-size:11px; border-radius:999px;
+  }
+  .event-card .longterm-hint{font-size:11.5px; color:var(--gold); margin-top:5px; font-weight:700;}
+  .empty-note{color:var(--text-dim); font-size:13px; padding:20px 4px;}
+
+  /* date picker modal */
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(27,42,74,.55); display:none; align-items:center; justify-content:center;
+    z-index:50; padding:20px;
+  }
+  .modal-overlay.open{display:flex;}
+  .modal-box{
+    background:var(--white); border-radius:var(--radius); padding:20px 22px; max-width:420px; width:100%;
+    border:2px solid var(--ink);
+  }
+  .modal-box h3{font-size:16px;}
+  .modal-box .range-note{font-size:12px; color:var(--text-dim); margin-bottom:12px;}
+  .modal-box .modal-actions{display:flex; justify-content:flex-end; gap:8px; margin-top:14px;}
+
+  /* favorites section */
+  .fav-section{border:2px solid var(--ink); border-radius:var(--radius); padding:20px 22px; background:var(--white);}
+  .fav-section h2{display:flex; align-items:center; gap:8px;}
+  .fav-section h2 .badge{
+    font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; font-size:12px; background:var(--lantern); color:var(--white);
+    padding:2px 10px; border-radius:999px; font-weight:700;
+  }
+  .fav-cal-wrap{margin-bottom:20px; padding-bottom:18px; border-bottom:1px dashed var(--line);}
+  .fav-table-wrap{overflow-x:auto;}
+  table.fav-table{width:100%; border-collapse:collapse; font-size:12.5px;}
+  table.fav-table thead th{
+    background:var(--paper-2); color:var(--text-dim); font-weight:700; font-size:11.5px;
+    text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); white-space:nowrap;
+  }
+  table.fav-table tbody td{padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  table.fav-table tbody tr:nth-child(even){background:rgba(0,0,0,.012);}
+  table.fav-table tbody tr.row-longterm{background:#FBEEE0;}
+  table.fav-table tbody tr.row-longterm:hover{background:#F6E4D0;}
+  table.fav-table tbody tr:hover{background:var(--paper);}
+  table.fav-table td.col-check{width:24px;}
+  table.fav-table td.col-check input{width:16px; height:16px; accent-color:var(--lantern); cursor:pointer;}
+  table.fav-table .cell-title{font-weight:700; color:var(--ink);}
+  table.fav-table .venue-inline-dot{
+    display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px;
+    vertical-align:middle; flex-shrink:0;
+  }
+  table.fav-table .cell-sub{font-size:11px; color:var(--text-dim); margin-top:2px;}
+  table.fav-table .region-tag{
+    display:inline-block; font-size:10px; color:var(--text-dim); background:var(--paper-2);
+    padding:1px 7px; border-radius:999px; margin-top:3px;
+  }
+  table.fav-table .date-main{font-weight:700;}
+  table.fav-table .date-sub{font-size:11px; color:var(--text-dim); margin-top:2px;}
+  table.fav-table .type-badge{
+    display:inline-block; font-size:11px; font-weight:700; color:var(--white); padding:2px 9px;
+    border-radius:5px; margin:1px 3px 1px 0;
+  }
+  table.fav-table a.link-arrow{color:var(--lantern); font-weight:700; text-decoration:none; font-size:12.5px; white-space:nowrap;}
+  table.fav-table a.link-arrow:hover{text-decoration:underline;}
+  table.fav-table a.link-arrow.fb-link{color:var(--teal);}
+  .link-stack{display:flex; flex-direction:column; gap:4px; align-items:flex-start;}
+  table.fav-table .no-link{color:var(--text-dim); font-size:11.5px;}
+
+  /* drag-and-drop handles in fav list */
+  .drag-handle{
+    cursor:grab; color:var(--line); font-size:16px; line-height:1; padding:0 6px 0 0;
+    user-select:none; display:inline-block;
+  }
+  .drag-handle:active{cursor:grabbing;}
+  tr.dragging{opacity:.35;}
+  tr.drag-over{outline:2px dashed var(--teal); outline-offset:-2px;}
+  .month-total{font-size:12.5px; color:var(--text-dim); margin-bottom:14px;}
+  .month-section-title{
+    font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; color:var(--lantern); font-weight:700; font-size:14.5px;
+    border-bottom:1px solid var(--line); padding-bottom:7px; margin:22px 0 10px;
+  }
+  .month-section-title:first-of-type{margin-top:0;}
+  .date-label{
+    font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif; font-weight:700; color:var(--ink); font-size:14px;
+    padding:14px 0 6px; border-bottom:1px solid var(--line); margin-bottom:8px;
+  }
+  .date-label:first-of-type{padding-top:0;}
+  #favContent .fav-table-wrap{margin-bottom:18px;}
+  .fav-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; border-top:1px dashed var(--line); padding-top:16px;}
+
+  .import-panel textarea{
+    width:100%; min-height:110px; font-family:monospace; font-size:12px; padding:10px;
+    border:1.3px solid var(--line); border-radius:8px; background:var(--paper); resize:vertical;
+  }
+  .import-panel{margin-top:10px;}
+  .hint{font-size:11.5px; color:var(--text-dim); margin-top:6px;}
+  .hidden{display:none !important;}
+
+  @media print{
+    header.top .toolbar, .filter-panel-section, .view-section, .import-panel, .fav-actions, .modal-overlay, .fav-cal-wrap{display:none !important;}
+    body{background:#fff;}
+    .fav-section{border:none;}
+    .fav-section .event-card input[type=checkbox]{display:none !important;}
+    table.fav-table .col-check{display:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <span class="eyebrow">TAIWAN · 假期活動規劃</span>
+      <h1>我的活動地圖</h1>
+      <div class="sub">依地區、展館、活動類型篩選展演與季節活動,用月曆檢視挑出想去的行程;長期展覽加入收藏時可指定實際想去的那一天。</div>
+    </div>
+    <div class="toolbar">
+      <button class="ghost" id="btnReload">重新載入資料</button>
+      <button class="ghost" id="btnImportToggle">手動匯入</button>
+      <button class="ghost" id="btnClearData">清除快取</button>
+    </div>
+  </header>
+
+  <div id="dataStatus" class="data-status"></div>
+
+  <section class="import-panel hidden" id="importPanel">
+    <div class="panel">
+      <h3>匯入活動資料（JSON 陣列）</h3>
+      <div class="hint">格式範例：id、name、region（地區）、venue（展館/地點）、address（展館地址，選填）、types（類型陣列）、startDate、endDate（YYYY-MM-DD，單日活動可與 startDate 相同）、time、desc、link（活動或售票連結）、fbUrl（原始 FB 貼文網址，選填，會與 link 分開顯示）。之後爬取的中北東資料也用同樣格式貼上即可，會依 id 合併更新。</div>
+      <textarea id="importText" placeholder='[{"id":"a1","name":"範例活動","region":"台南","venue":"台南文化中心","address":"台南市東區中華東路三段332號","types":["展覽"],"startDate":"2026-08-10","endDate":"2026-08-10","time":"10:00-17:00","desc":"說明文字","link":"https://example.com"}]'></textarea>
+      <div class="toolbar" style="margin-top:10px;">
+        <button class="primary" id="btnImportGo">匯入 / 合併</button>
+        <button class="ghost" id="btnImportCancel">取消</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-panel-section">
+    <div class="panel">
+      <div class="filter-grid">
+        <div class="filter-block">
+          <h3>地區 <span class="selectall" data-group="regions">全選/全消</span></h3>
+          <div class="chip-list" id="regionChips"></div>
+        </div>
+        <div class="filter-block">
+          <h3>活動類型 <span class="selectall" data-group="types">全選/全消</span></h3>
+          <div class="chip-list" id="typeChips"></div>
+        </div>
+      </div>
+      <div class="filter-block" style="margin-top:16px;">
+        <h3>展館/地點 <span class="selectall" data-group="venues">全選/全消</span></h3>
+        <div id="venueTree" class="venue-tree"></div>
+      </div>
+      <div class="search-row">
+        <input type="text" id="searchBox" placeholder="搜尋活動名稱或說明…">
+        <div class="view-toggle">
+          <button id="btnViewCal" class="active">月曆檢視</button>
+          <button id="btnViewList">清單檢視</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view-section">
+    <div class="panel" id="calendarView">
+      <div class="cal-head">
+        <button id="prevMonth">← 上個月</button>
+        <div class="label" id="monthLabel" title="點擊查看本月全部活動"></div>
+        <button id="nextMonth">下個月 →</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="day-detail hidden" id="dayDetail">
+        <h4 id="dayDetailTitle"></h4>
+        <div id="dayDetailList"></div>
+      </div>
+    </div>
+    <div class="panel hidden" id="listView">
+      <div id="listContainer"></div>
+    </div>
+  </section>
+
+  <section class="fav-section">
+    <h2>我的假期規劃 <span class="badge" id="favCount">0 項</span></h2>
+
+    <div class="fav-cal-wrap" id="favCalWrap">
+      <div class="cal-head">
+        <button class="small" id="favPrevMonth">← 上個月</button>
+        <div class="label" id="favMonthLabel"></div>
+        <button class="small" id="favNextMonth">下個月 →</button>
+      </div>
+      <div class="cal-grid small" id="favCalGrid"></div>
+    </div>
+
+    <div id="favContent">
+      <p class="empty-note">尚未勾選任何活動，從上方月曆或清單勾選「加入我的假期」開始規劃吧。</p>
+    </div>
+    <div class="fav-actions">
+      <button class="primary" id="btnExportHtml">匯出 HTML</button>
+      <button id="btnExportGcal">📅 匯出 Google 日曆 (.ics)</button>
+      <button id="btnExportPdf">列印 / 另存 PDF</button>
+      <button class="ghost" id="btnClearFav">清空收藏</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- date picker modal for choosing an actual visit date within a long-term event's range -->
+<div class="modal-overlay" id="pickerOverlay">
+  <div class="modal-box">
+    <h3 id="pickerTitle">選擇造訪日期</h3>
+    <div class="range-note" id="pickerRangeNote"></div>
+    <div class="cal-head">
+      <button class="small" id="pickerPrevMonth">← 上個月</button>
+      <div class="label" id="pickerMonthLabel"></div>
+      <button class="small" id="pickerNextMonth">下個月 →</button>
+    </div>
+    <div class="cal-grid small" id="pickerCalGrid"></div>
+    <div class="modal-actions">
+      <button class="ghost" id="pickerCancel">取消</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let activities = [];
+let favMap = {};      // { activityId: 'YYYY-MM-DD' chosen visit date }
+let filters = { regions:new Set(), types:new Set(), venues:new Set() };
+let currentView = 'calendar';
+let currentMonth = new Date(); currentMonth.setDate(1);
+let selectedDate = null;
+let favCalMonth = new Date(); favCalMonth.setDate(1);
+let pickerState = null; // { ev, year, month, onPick }
+
+function seedData(){
+  return []}
+
+const STORAGE_KEYS = {
+  activities: 'vp_activities_v2',
+  activitiesUpdatedAt: 'vp_activities_updated_at_v2',
+  activitiesSource: 'vp_activities_source_v2',
+  favorites: 'vp_favorites',
+  favOrder: 'vp_fav_order'
+};
+
+function showStatus(kind, message, actionLabel, actionFn){
+  const el = document.getElementById('dataStatus');
+  el.className = 'data-status ' + (kind||'');
+  el.innerHTML = '';
+  const span = document.createElement('span');
+  span.innerHTML = message;
+  el.appendChild(span);
+  if(actionLabel && actionFn){
+    const btn = document.createElement('button');
+    btn.textContent = actionLabel;
+    btn.className = 'ghost small';
+    btn.style.fontSize = '11px';
+    btn.style.padding = '4px 10px';
+    btn.onclick = actionFn;
+    el.appendChild(btn);
+  }
+}
+
+function loadFavorites(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEYS.favorites);
+    const parsed = raw ? JSON.parse(raw) : {};
+    if(Array.isArray(parsed)){
+      const map = {};
+      parsed.forEach(id=>{ const a = activities.find(x=>x.id===id); if(a) map[id]=a.startDate; });
+      favMap = map;
+      saveFavorites();
+    } else {
+      favMap = parsed || {};
+    }
+  }catch(e){ favMap = {}; }
+}
+
+async function fetchExternalData(){
+  const url = 'events.json?t=' + Date.now();
+  const res = await fetch(url, {cache:'no-store'});
+  if(!res.ok) throw new Error('HTTP ' + res.status);
+  const data = await res.json();
+  if(!Array.isArray(data)) throw new Error('events.json 內容不是陣列');
+  return data;
+}
+
+function loadFromCache(){
+  const raw = localStorage.getItem(STORAGE_KEYS.activities);
+  if(!raw) return null;
+  try{ return JSON.parse(raw); }catch(e){ return null; }
+}
+
+function saveActivities(){
+  try{
+    localStorage.setItem(STORAGE_KEYS.activities, JSON.stringify(activities));
+    localStorage.setItem(STORAGE_KEYS.activitiesUpdatedAt, new Date().toISOString());
+  }catch(e){ console.error(e); }
+}
+function saveFavorites(){
+  try{ localStorage.setItem(STORAGE_KEYS.favorites, JSON.stringify(favMap)); }catch(e){ console.error(e); }
+}
+
+async function loadData(){
+  // 1) Try fetch external events.json (if newer data exists alongside)
+  try{
+    const fetched = await fetchExternalData();
+    if(fetched.length > 0){
+      activities = fetched;
+      localStorage.setItem(STORAGE_KEYS.activitiesSource, 'events.json');
+      saveActivities();
+      loadFavorites();
+      showStatus('ok', '已載入 <b>'+fetched.length+'</b> 筆活動 <span class="badge">來源:events.json</span> <span class="badge">'+new Date().toLocaleString('zh-TW')+'</span>');
+      return;
+    }
+  }catch(err){}
+
+  // 2) Use embedded seed data
+  const seed = seedData();
+  if(seed.length > 1){
+    activities = seed;
+    saveActivities();
+    loadFavorites();
+    showStatus('ok', '已載入 <b>'+seed.length+'</b> 筆活動 <span class="badge">來源:內建資料</span> <span class="badge">'+new Date().toLocaleString('zh-TW')+'</span>');
+    return;
+  }
+
+  // 3) Fallback: localStorage cache
+  const cached = loadFromCache();
+  if(cached && cached.length){
+    activities = cached;
+    loadFavorites();
+    showStatus('warn', '顯示上次快取的 <b>'+cached.length+'</b> 筆活動');
+    return;
+  }
+
+  activities = seed;
+  loadFavorites();
+  showStatus('err', '找不到活動資料');
+}
+
+function isFav(id){ return Object.prototype.hasOwnProperty.call(favMap, id); }
+function isLongTerm(ev){ return ev.startDate !== ev.endDate; }
+
+function getMacroRegion(county){
+  const base = (county||'').replace(/(市|縣)$/,'');
+  const map = {'台北':'北部','新北':'北部','基隆':'北部','桃園':'北部','新竹':'北部',
+    '台中':'中部','彰化':'中部','南投':'中部','苗栗':'中部','雲林':'中部',
+    '嘉義':'南部','台南':'南部','高雄':'南部','屏東':'南部',
+    '宜蘭':'東部','花蓮':'東部','台東':'東部',
+    '澎湖':'離島','金門':'離島','連江':'離島'};
+  return map[base] || '';
+}
+const TYPE_PALETTE = ['#3E7C59','#B4467E','#D98A22','#3E6FA6','#7A5CA6','#2F6F62','#A6432E','#6B7A3E'];
+function typeColor(t){
+  let h=0; for(let i=0;i<t.length;i++) h = (h*31 + t.charCodeAt(i)) >>> 0;
+  return TYPE_PALETTE[h % TYPE_PALETTE.length];
+}
+function typeBadgeHtml(types){
+  return (types||[]).map(t=>`<span class="type-badge" style="background:${typeColor(t)}">${t}</span>`).join('');
+}
+function tableHeadHtml(){
+  return '<thead><tr><th></th><th>縣市</th><th>類型</th><th>展演館</th><th>節目</th><th>日期</th><th>連結</th></tr></thead>';
+}
+
+// 售票/官方連結(link)與 FB 原文貼文連結(fbUrl)分開顯示
+function linkCellHtml(ev){
+  const parts = [];
+  if(ev.link) parts.push(`<a class="link-arrow" href="${ev.link}" target="_blank" rel="noopener">售票/官網 →</a>`);
+  if(ev.fbUrl) parts.push(`<a class="link-arrow fb-link" href="${ev.fbUrl}" target="_blank" rel="noopener">FB原文 →</a>`);
+  return parts.length ? `<div class="link-stack">${parts.join('')}</div>` : '<span class="no-link">—</span>';
+}
+
+function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'zh-Hant')); }
+
+// 記錄樹狀節點的展開狀態
+const treeState = { openRegions:new Set(), openTypes:new Set() };
+
+function initFilters(){
+  const regions = uniqueSorted(activities.map(a=>a.region));
+  const types = uniqueSorted(activities.flatMap(a=>a.types||[]));
+  const venues = uniqueSorted(activities.map(a=>a.venue));
+  filters.regions = new Set(regions);
+  filters.types = new Set(types);
+  filters.venues = new Set(venues);
+  // 預設把每個地區都收合(要看再展開)
+  treeState.openRegions = new Set();
+  treeState.openTypes = new Set();
+  renderChipGroup('regionChips','regions',regions);
+  renderChipGroup('typeChips','types',types);
+  renderVenueTree();
+}
+
+function renderChipGroup(containerId, groupKey, values){
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  values.forEach(v=>{
+    const chip = document.createElement('span');
+    chip.className = 'chip' + (filters[groupKey].has(v) ? ' active' : '');
+    chip.textContent = v;
+    chip.tabIndex = 0;
+    chip.onclick = ()=>{
+      if(filters[groupKey].has(v)) filters[groupKey].delete(v); else filters[groupKey].add(v);
+      renderChipGroup(containerId, groupKey, values);
+      // 地區變動 → 場館樹要重繪(不同地區看到的場館不同)
+      if(groupKey==='regions' || groupKey==='types') renderVenueTree();
+      renderAll();
+    };
+    c.appendChild(chip);
+  });
+}
+
+// 場館屬性排序順序 & 顏色
+const VENUE_TYPE_ORDER = [
+  '博物館/美術館', '音樂廳/表演藝術', 'livehouse', '爵士酒吧', '音樂餐廳',
+  '圖書館/文學館', '電影館', '獨立書店/書店', '季節性或大型活動', '未分類'
+];
+const VENUE_TYPE_COLORS = {
+  '博物館/美術館': '#3E6FA6',
+  '音樂廳/表演藝術': '#7A5CA6',
+  'livehouse': '#A6432E',
+  '爵士酒吧': '#5E4A2E',
+  '音樂餐廳': '#D98A22',
+  '圖書館/文學館': '#3E7C59',
+  '電影館': '#2A6B7A',
+  '獨立書店/書店': '#B4467E',
+  '季節性或大型活動': '#C1442E',
+  '未分類': '#6b6558'
+};
+function venueTypeOrderIndex(t){
+  const i = VENUE_TYPE_ORDER.indexOf(t);
+  return i === -1 ? 999 : i;
+}
+
+function renderVenueTree(){
+  const container = document.getElementById('venueTree');
+  container.innerHTML = '';
+  const selectedRegions = filters.regions;
+  if(selectedRegions.size === 0){
+    container.innerHTML = '<div class="empty-note" style="padding:8px 4px;">請先在上方勾選至少一個地區。</div>';
+    return;
+  }
+
+  // 找出目前顯示範圍(所選地區)裡的所有場館,以及其 venueType
+  const venueInfo = new Map(); // venue → {venueType, region}
+  activities.filter(a=>selectedRegions.has(a.region)).forEach(a=>{
+    if(!venueInfo.has(a.venue)){
+      venueInfo.set(a.venue, { venueType: a.venueType || '未分類', region: a.region });
+    }
+  });
+
+  // 依 venueType 分組
+  const groups = new Map(); // venueType → [{venue, region}, ...]
+  for(const [venue, info] of venueInfo){
+    if(!groups.has(info.venueType)) groups.set(info.venueType, []);
+    groups.get(info.venueType).push({ venue, region: info.region });
+  }
+
+  // 依固定順序遍歷 venueType
+  const orderedTypes = [...groups.keys()].sort((a,b)=> venueTypeOrderIndex(a) - venueTypeOrderIndex(b));
+
+  orderedTypes.forEach(vt=>{
+    const venues = groups.get(vt).sort((a,b)=>
+      a.region.localeCompare(b.region,'zh-Hant') || a.venue.localeCompare(b.venue,'zh-Hant')
+    );
+    const color = VENUE_TYPE_COLORS[vt] || VENUE_TYPE_COLORS['未分類'];
+    const selectedCount = venues.filter(v=>filters.venues.has(v.venue)).length;
+
+    const section = document.createElement('div');
+    section.className = 'venue-vtype-section';
+    section.innerHTML = `
+      <div class="venue-vtype-head">
+        <span class="venue-vtype-dot" style="background:${color}"></span>
+        <span class="venue-vtype-name">${vt}</span>
+        <span class="venue-vtype-count">${selectedCount}/${venues.length}</span>
+        <button class="mini-btn" data-toggle-vtype="${vt}">全選/全消</button>
+      </div>
+      <div class="venue-vtype-body"></div>`;
+    const body = section.querySelector('.venue-vtype-body');
+    venues.forEach(({venue, region})=>{
+      const chip = document.createElement('span');
+      chip.className = 'venue-chip' + (filters.venues.has(venue) ? ' active' : '');
+      chip.style.setProperty('--vt-color', color);
+      chip.innerHTML = `<span class="venue-chip-dot"></span><span class="venue-chip-name">${venue}</span><span class="venue-chip-region">${region}</span>`;
+      chip.onclick = ()=>{
+        if(filters.venues.has(venue)) filters.venues.delete(venue);
+        else filters.venues.add(venue);
+        renderVenueTree();
+        renderAll();
+      };
+      body.appendChild(chip);
+    });
+    container.appendChild(section);
+  });
+
+  container.querySelectorAll('[data-toggle-vtype]').forEach(btn=>{
+    btn.onclick = ()=>{
+      const vt = btn.dataset.toggleVtype;
+      const venues = groups.get(vt).map(x=>x.venue);
+      const allSelected = venues.every(v=>filters.venues.has(v));
+      if(allSelected) venues.forEach(v=>filters.venues.delete(v));
+      else venues.forEach(v=>filters.venues.add(v));
+      renderVenueTree();
+      renderAll();
+    };
+  });
+}
+
+document.querySelectorAll('.selectall').forEach(el=>{
+  el.onclick = ()=>{
+    const group = el.dataset.group;
+    const values = group==='regions' ? uniqueSorted(activities.map(a=>a.region))
+      : group==='types' ? uniqueSorted(activities.flatMap(a=>a.types||[]))
+      : uniqueSorted(activities.map(a=>a.venue));
+    if(filters[group].size === values.length) filters[group] = new Set();
+    else filters[group] = new Set(values);
+    if(group==='regions') renderChipGroup('regionChips','regions',values);
+    else if(group==='types') renderChipGroup('typeChips','types',values);
+    renderVenueTree();
+    renderAll();
+  };
+});
+
+function isPermanent(ev){
+  // 展期超過 1 個月(30 天)視為長期活動/常設展
+  if(!ev.startDate || !ev.endDate) return false;
+  const start = parseDate(ev.startDate);
+  const end = parseDate(ev.endDate);
+  const days = Math.round((end - start) / (1000*60*60*24));
+  return days > 30;
+}
+function sortEventsForList(events){
+  // 常設展在最上面(依名稱排),其餘依 startDate 由早到晚
+  const perm = events.filter(isPermanent).sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant'));
+  const rest = events.filter(ev=>!isPermanent(ev))
+    .sort((a,b)=> a.startDate.localeCompare(b.startDate) || a.region.localeCompare(b.region,'zh-Hant'));
+  return [...perm, ...rest];
+}
+
+function eventOccursOn(ev, dateStr){ return dateStr >= ev.startDate && dateStr <= ev.endDate; }
+
+function matchesFilters(ev){
+  // 結束日期早於今天的活動不顯示
+  const today = fmtDate(new Date());
+  if(ev.endDate < today) return false;
+  if(!filters.regions.has(ev.region)) return false;
+  // 場館與類型是「或」的關係: 選了場館就顯示該場館所有活動;
+  // 選了類型就顯示該類型所有活動。兩個各自命中即可。
+  const venueOk = filters.venues.has(ev.venue);
+  const typeOk = (ev.types||[]).some(t=>filters.types.has(t));
+  if(!venueOk && !typeOk) return false;
+  const q = document.getElementById('searchBox').value.trim().toLowerCase();
+  if(q && !(ev.name.toLowerCase().includes(q) || (ev.desc||'').toLowerCase().includes(q))) return false;
+  return true;
+}
+
+function fmtDate(d){
+  // 用本地時區的年月日,避免 toISOString() 轉 UTC 造成日期偏移(台灣 UTC+8,00:00 會被算成前一天)
+  const y = d.getFullYear();
+  const m = String(d.getMonth()+1).padStart(2,'0');
+  const day = String(d.getDate()).padStart(2,'0');
+  return `${y}-${m}-${day}`;
+}
+function parseDate(dateStr){ const [y,m,d]=dateStr.split('-').map(Number); return new Date(y,m-1,d); }
+function monthKey(y,m){ return y*12+m; }
+
+/* ---- generic month grid renderer ---------------------------------
+   dayInfo(dateStr, dayNum) -> { dotsHtml, selected, disabled, onClick } */
+function renderMonthGrid(gridEl, year, month, dayInfo){
+  gridEl.innerHTML = '';
+  ['日','一','二','三','四','五','六'].forEach(d=>{
+    const el = document.createElement('div'); el.className='cal-dow'; el.textContent=d; gridEl.appendChild(el);
+  });
+  const firstDow = new Date(year,month,1).getDay();
+  const daysInMonth = new Date(year,month+1,0).getDate();
+  for(let i=0;i<firstDow;i++){ const e=document.createElement('div'); e.className='cal-cell empty'; gridEl.appendChild(e); }
+  for(let day=1; day<=daysInMonth; day++){
+    const dateStr = fmtDate(new Date(year,month,day));
+    const info = dayInfo(dateStr, day) || {};
+    const cell = document.createElement('div');
+    cell.className = 'cal-cell' + (info.selected?' selected':'') + (info.disabled?' disabled':'');
+    cell.innerHTML = `<div class="num">${day}</div>${info.dotsHtml||''}`;
+    if(!info.disabled && info.onClick){ cell.onclick = info.onClick; }
+    gridEl.appendChild(cell);
+  }
+}
+
+/* ---- main browse calendar ---- */
+function renderCalendar(){
+  const y = currentMonth.getFullYear(), m = currentMonth.getMonth();
+  document.getElementById('monthLabel').textContent = `${y} 年 ${m+1} 月`;
+  renderMonthGrid(document.getElementById('calGrid'), y, m, (dateStr, day)=>{
+    const dayEvents = activities.filter(a=>matchesFilters(a) && eventOccursOn(a,dateStr));
+    const dots = dayEvents.slice(0,6).map(a=>{
+      const favHere = isFav(a.id) && favMap[a.id]===dateStr;
+      const dotColor = VENUE_TYPE_COLORS[a.venueType] || VENUE_TYPE_COLORS['未分類'];
+      return `<span class="dot${favHere?' fav':''}" style="background:${dotColor}" title="${a.venueType||''}"></span>`;
+    }).join('');
+    const moreHtml = dayEvents.length>6 ? `<div class="more">+${dayEvents.length-6}</div>` : '';
+    return {
+      dotsHtml: `<div class="dots">${dots}</div>${moreHtml}`,
+      selected: selectedDate===dateStr,
+      onClick: ()=>{ selectedDate = dateStr; renderCalendar(); renderDayDetail(dateStr); }
+    };
+  });
+}
+
+function renderDayDetail(dateStr){
+  const box = document.getElementById('dayDetail');
+  const title = document.getElementById('dayDetailTitle');
+  const list = document.getElementById('dayDetailList');
+  box.classList.remove('hidden');
+  title.textContent = `${dateStr} 當日活動`;
+  const dayEvents = sortEventsForList(activities.filter(a=>matchesFilters(a) && eventOccursOn(a,dateStr)));
+  list.innerHTML = '';
+  if(dayEvents.length){ list.appendChild(buildEventTable(dayEvents)); }
+  else { list.innerHTML = '<p class="empty-note">此日期無符合篩選條件的活動。</p>'; }
+}
+
+function showMonthDetail(){
+  const y = currentMonth.getFullYear(), m = currentMonth.getMonth();
+  const firstStr = fmtDate(new Date(y,m,1));
+  const day10Str = fmtDate(new Date(y,m,10));
+  const day20Str = fmtDate(new Date(y,m,20));
+  const lastDay = new Date(y,m+1,0).getDate();
+  const lastStr = fmtDate(new Date(y,m,lastDay));
+  const mm = String(m+1).padStart(2,'0');
+
+  const monthEvents = activities.filter(a=>matchesFilters(a) && !(a.endDate<firstStr || a.startDate>lastStr));
+
+  const buckets = {
+    before: [], early: [], mid: [], late: []
+  };
+  monthEvents.forEach(ev=>{
+    if(ev.startDate < firstStr) buckets.before.push(ev);
+    else if(ev.startDate <= day10Str) buckets.early.push(ev);
+    else if(ev.startDate <= day20Str) buckets.mid.push(ev);
+    else buckets.late.push(ev);
+  });
+  // 每段內:長期活動排在前面,單日活動照 startDate 排
+  const sortFn = (a,b)=>{
+    const ap = isPermanent(a) ? 0 : 1;
+    const bp = isPermanent(b) ? 0 : 1;
+    if(ap !== bp) return ap - bp;
+    return a.startDate.localeCompare(b.startDate) || a.region.localeCompare(b.region,'zh-Hant');
+  };
+  Object.values(buckets).forEach(arr=>arr.sort(sortFn));
+
+  selectedDate = null;
+  renderCalendar();
+  const box = document.getElementById('dayDetail');
+  const title = document.getElementById('dayDetailTitle');
+  const list = document.getElementById('dayDetailList');
+  box.classList.remove('hidden');
+  title.textContent = `${y} 年 ${m+1} 月 全部活動`;
+
+  if(monthEvents.length===0){
+    list.innerHTML = '<p class="empty-note">本月無符合篩選條件的活動。</p>';
+    return;
+  }
+
+  const sections = [
+    { key:'before', label:`${m+1}月前已開展，延續至${m+1}月` },
+    { key:'early', label:`${m+1}月上旬 (${mm}/01–${mm}/10)` },
+    { key:'mid', label:`${m+1}月中旬 (${mm}/11–${mm}/20)` },
+    { key:'late', label:`${m+1}月下旬 (${mm}/21–${mm}/${lastDay})` }
+  ];
+  list.innerHTML = `<div class="month-total">共 ${monthEvents.length} 場活動</div>`;
+  sections.forEach(sec=>{
+    const items = buckets[sec.key];
+    if(!items.length) return;
+    const heading = document.createElement('div');
+    heading.className = 'month-section-title';
+    heading.textContent = sec.label;
+    list.appendChild(heading);
+    list.appendChild(buildEventTable(items));
+  });
+}
+document.getElementById('monthLabel').onclick = showMonthDetail;
+
+/* ---- date picker modal ---- */
+function openDatePicker(ev, onPick){
+  const today = fmtDate(new Date());
+  // 月曆起始從今天(或活動開始日,取較晚者)開始顯示
+  const displayFrom = today > ev.startDate ? today : ev.startDate;
+  const displayDate = parseDate(displayFrom);
+  pickerState = { ev, year:displayDate.getFullYear(), month:displayDate.getMonth(), onPick };
+  document.getElementById('pickerTitle').textContent = `選擇造訪日期 — ${ev.name}`;
+  document.getElementById('pickerRangeNote').textContent = `此活動期間：${ev.startDate} ～ ${ev.endDate}，請點選你想去的那一天`;
+  renderPickerGrid();
+  document.getElementById('pickerOverlay').classList.add('open');
+}
+function closeDatePicker(){ document.getElementById('pickerOverlay').classList.remove('open'); pickerState=null; }
+function renderPickerGrid(){
+  if(!pickerState) return;
+  const { ev, year, month } = pickerState;
+  const today = fmtDate(new Date());
+  document.getElementById('pickerMonthLabel').textContent = `${year} 年 ${month+1} 月`;
+  const startBound = today > ev.startDate ? parseDate(today) : parseDate(ev.startDate);
+  const endBound = parseDate(ev.endDate);
+  document.getElementById('pickerPrevMonth').disabled = monthKey(year,month) <= monthKey(startBound.getFullYear(),startBound.getMonth());
+  document.getElementById('pickerNextMonth').disabled = monthKey(year,month) >= monthKey(endBound.getFullYear(),endBound.getMonth());
+  renderMonthGrid(document.getElementById('pickerCalGrid'), year, month, (dateStr)=>{
+    // 過去日期不可選,也需在活動展期內
+    const inRange = dateStr >= (today > ev.startDate ? today : ev.startDate) && dateStr <= ev.endDate;
+    return {
+      disabled: !inRange,
+      selected: favMap[ev.id]===dateStr,
+      onClick: inRange ? ()=>{ pickerState.onPick(dateStr); closeDatePicker(); } : null
+    };
+  });
+}
+document.getElementById('pickerPrevMonth').onclick = ()=>{ if(!pickerState) return; pickerState.month--; if(pickerState.month<0){pickerState.month=11;pickerState.year--;} renderPickerGrid(); };
+document.getElementById('pickerNextMonth').onclick = ()=>{ if(!pickerState) return; pickerState.month++; if(pickerState.month>11){pickerState.month=0;pickerState.year++;} renderPickerGrid(); };
+document.getElementById('pickerCancel').onclick = closeDatePicker;
+document.getElementById('pickerOverlay').onclick = (e)=>{ if(e.target.id==='pickerOverlay') closeDatePicker(); };
+
+/* ---- event card (shared by day-detail & list view) ---- */
+function buildEventRow(ev){
+  const tr = document.createElement('tr');
+  if(isPermanent(ev)) tr.classList.add('row-longterm');
+
+  const tdCheck = document.createElement('td'); tdCheck.className='col-check';
+  const cb = document.createElement('input'); cb.type='checkbox'; cb.checked = isFav(ev.id);
+  cb.onchange = async ()=>{
+    if(cb.checked){
+      if(!isLongTerm(ev)){
+        favMap[ev.id] = ev.startDate;
+        await saveFavorites(); renderAll();
+      } else {
+        openDatePicker(ev, async (dateStr)=>{ favMap[ev.id]=dateStr; await saveFavorites(); renderAll(); });
+        const revertCheck = ()=>{ if(!isFav(ev.id)) cb.checked=false; };
+        document.getElementById('pickerCancel').addEventListener('click', revertCheck, {once:true});
+      }
+    } else {
+      delete favMap[ev.id]; await saveFavorites(); renderAll();
+    }
+  };
+  tdCheck.appendChild(cb);
+
+  const tdRegion = document.createElement('td');
+  tdRegion.innerHTML = `${ev.region?`<div class="cell-title">${ev.region}</div>`:''} ${getMacroRegion(ev.region)?`<div class="region-tag">${getMacroRegion(ev.region)}</div>`:''}`;
+  const tdType = document.createElement('td'); tdType.innerHTML = typeBadgeHtml(ev.types);
+  const tdVenue = document.createElement('td');
+  const vtColor = VENUE_TYPE_COLORS[ev.venueType] || VENUE_TYPE_COLORS['未分類'];
+  tdVenue.innerHTML = `<div class="cell-title"><span class="venue-inline-dot" style="background:${vtColor}" title="${ev.venueType||''}"></span>${ev.venue}</div>${ev.address?`<div class="cell-sub">${ev.address}</div>`:''}`;
+  const tdName = document.createElement('td');
+  tdName.innerHTML = `<div class="cell-title">${ev.name}</div>${ev.desc?`<div class="cell-sub">${ev.desc}</div>`:''}`;
+
+  const tdDate = document.createElement('td');
+  let dateHtml = `<div class="date-main">${isLongTerm(ev) ? ev.startDate+' ~ '+ev.endDate : ev.startDate}</div>`;
+  if(ev.time) dateHtml += `<div class="date-sub">${ev.time}</div>`;
+  if(isLongTerm(ev)){
+    if(isFav(ev.id)){
+      dateHtml += `<div class="date-sub">已選造訪日：${favMap[ev.id]} <button type="button" class="small" data-change="${ev.id}">更改</button></div>`;
+    } else {
+      dateHtml += `<div class="date-sub longterm-hint">長期活動，勾選後可指定造訪日</div>`;
+    }
+  }
+  tdDate.innerHTML = dateHtml;
+  const changeBtn = tdDate.querySelector('[data-change]');
+  if(changeBtn) changeBtn.onclick = ()=> openDatePicker(ev, async (dateStr)=>{ favMap[ev.id]=dateStr; await saveFavorites(); renderAll(); });
+
+  const tdLink = document.createElement('td');
+  tdLink.innerHTML = linkCellHtml(ev);
+
+  tr.append(tdCheck, tdRegion, tdType, tdVenue, tdName, tdDate, tdLink);
+  return tr;
+}
+
+function buildEventTable(events){
+  const wrap = document.createElement('div'); wrap.className='fav-table-wrap';
+  const table = document.createElement('table'); table.className='fav-table';
+  table.insertAdjacentHTML('beforeend', tableHeadHtml());
+  const tbody = document.createElement('tbody');
+  events.forEach(ev=> tbody.appendChild(buildEventRow(ev)));
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  return wrap;
+}
+
+function buildEventCard(ev){
+  const card = document.createElement('div'); card.className='event-card';
+  const cb = document.createElement('input'); cb.type='checkbox'; cb.checked = isFav(ev.id);
+  cb.onchange = async ()=>{
+    if(cb.checked){
+      if(!isLongTerm(ev)){
+        favMap[ev.id] = ev.startDate;
+        await saveFavorites(); renderAll();
+      } else {
+        openDatePicker(ev, async (dateStr)=>{ favMap[ev.id]=dateStr; await saveFavorites(); renderAll(); });
+        // if user cancels without picking, revert the checkbox visually
+        const revertCheck = ()=>{ if(!isFav(ev.id)) cb.checked=false; };
+        document.getElementById('pickerCancel').addEventListener('click', revertCheck, {once:true});
+      }
+    } else {
+      delete favMap[ev.id]; await saveFavorites(); renderAll();
+    }
+  };
+  const meta = document.createElement('div'); meta.className='meta';
+  const rangeLabel = ev.startDate===ev.endDate ? ev.startDate : `${ev.startDate} ~ ${ev.endDate}`;
+  let visitHtml = '';
+  if(isFav(ev.id) && isLongTerm(ev)){
+    visitHtml = `<div class="visit-row">已選造訪日：${favMap[ev.id]} <button type="button" data-change="${ev.id}">更改</button></div>`;
+  } else if(isLongTerm(ev)){
+    visitHtml = `<div class="longterm-hint">長期展覽/活動 — 加入收藏時可指定想去的那一天</div>`;
+  }
+  meta.innerHTML = `<div class="name">${ev.name}</div>
+    <div class="tags">${ev.region?`<span class="tag region">${ev.region}</span>`:''}<span class="tag">${ev.venue}</span>${(ev.types||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    <div class="when">${rangeLabel}${ev.time?' · '+ev.time:''}</div>
+    ${ev.desc?`<div class="desc">${ev.desc}</div>`:''}
+    <div class="links">${linkCellHtml(ev)}</div>
+    ${visitHtml}`;
+  card.appendChild(cb); card.appendChild(meta);
+  const changeBtn = meta.querySelector('[data-change]');
+  if(changeBtn){
+    changeBtn.onclick = ()=> openDatePicker(ev, async (dateStr)=>{ favMap[ev.id]=dateStr; await saveFavorites(); renderAll(); });
+  }
+  return card;
+}
+
+function renderListView(){
+  const container = document.getElementById('listContainer');
+  const list = sortEventsForList(activities.filter(matchesFilters));
+  container.innerHTML = '';
+  if(list.length){ container.appendChild(buildEventTable(list)); }
+  else { container.innerHTML = '<p class="empty-note">沒有符合篩選條件的活動。</p>'; }
+}
+
+/* ---- favorites: calendar first, then detailed list ---- */
+let favCalInitialized = false;
+
+// favOrder: { 'YYYY-MM-DD': ['id1','id2',...], ... } — 每個造訪日的自訂排序
+let favOrder = {};
+
+function loadFavOrder(){
+  try{ favOrder = JSON.parse(localStorage.getItem(STORAGE_KEYS.favOrder)||'{}'); }
+  catch(e){ favOrder = {}; }
+}
+function saveFavOrder(){
+  try{ localStorage.setItem(STORAGE_KEYS.favOrder, JSON.stringify(favOrder)); }catch(e){}
+}
+
+function renderFavCalendar(){
+  const ids = Object.keys(favMap);
+  // 只在初次載入(且尚未初始化)時,把月曆定位到最早的造訪月;之後就保持使用者當前檢視的月份
+  if(ids.length && !favCalInitialized){
+    const dates = ids.map(id=>favMap[id]).sort();
+    const earliest = parseDate(dates[0]);
+    favCalMonth = new Date(earliest.getFullYear(), earliest.getMonth(), 1);
+    favCalInitialized = true;
+  }
+  const y = favCalMonth.getFullYear(), m = favCalMonth.getMonth();
+  document.getElementById('favMonthLabel').textContent = `${y} 年 ${m+1} 月`;
+  renderMonthGrid(document.getElementById('favCalGrid'), y, m, (dateStr)=>{
+    const here = ids.filter(id=>favMap[id]===dateStr);
+    if(!here.length) return {};
+    return {
+      dotsHtml: `<div class="dots">${here.map(id=>{
+        const ev = activities.find(a=>a.id===id);
+        const dotColor = ev ? (VENUE_TYPE_COLORS[ev.venueType] || VENUE_TYPE_COLORS['未分類']) : '#C1442E';
+        return `<span class="dot fav" style="background:${dotColor}"></span>`;
+      }).join('')}</div>`,
+      onClick: ()=>{
+        const target = document.querySelector(`#favContent tr[data-date="${dateStr}"]`);
+        if(target) target.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    };
+  });
+}
+document.getElementById('favPrevMonth').onclick = ()=>{ favCalMonth.setMonth(favCalMonth.getMonth()-1); renderFavorites(); };
+document.getElementById('favNextMonth').onclick = ()=>{ favCalMonth.setMonth(favCalMonth.getMonth()+1); renderFavorites(); };
+
+function renderFavorites(){
+  const ids = Object.keys(favMap);
+  document.getElementById('favCount').textContent = `${ids.length} 項`;
+  renderFavCalendar();
+  const content = document.getElementById('favContent');
+  if(ids.length===0){
+    content.innerHTML = '<p class="empty-note">尚未勾選任何活動，從上方月曆或清單勾選「加入我的假期」開始規劃吧。</p>';
+    return;
+  }
+  const y = favCalMonth.getFullYear(), m = favCalMonth.getMonth();
+  const monthPrefix = `${y}-${String(m+1).padStart(2,'0')}`;
+  const favEvents = activities.filter(a=>ids.includes(a.id))
+    .map(a=>({...a, visitDate: favMap[a.id]}))
+    .filter(a=>a.visitDate.startsWith(monthPrefix))
+    .sort((a,b)=>a.visitDate.localeCompare(b.visitDate));
+  if(favEvents.length===0){
+    content.innerHTML = `<p class="empty-note">${y} 年 ${m+1} 月尚未選擇任何造訪日期，切換月曆看看其他月份，或從上方勾選更多活動。</p>`;
+    return;
+  }
+  const byDate = {};
+  favEvents.forEach(ev=>{ (byDate[ev.visitDate] = byDate[ev.visitDate]||[]).push(ev); });
+  const sections = Object.keys(byDate).sort().map(date=>{
+    // 套用 favOrder 排序:未記錄的 id 排在最後
+    const order = favOrder[date] || [];
+    const sorted = [...byDate[date]].sort((a,b)=>{
+      const ai = order.indexOf(a.id), bi = order.indexOf(b.id);
+      if(ai===-1 && bi===-1) return 0;
+      if(ai===-1) return 1;
+      if(bi===-1) return -1;
+      return ai - bi;
+    });
+    const rowsHtml = sorted.map(ev=>{
+      const macro = getMacroRegion(ev.region);
+      const linkHtml = linkCellHtml(ev);
+      const vtColor = VENUE_TYPE_COLORS[ev.venueType] || VENUE_TYPE_COLORS['未分類'];
+      const rowClass = isPermanent(ev) ? ' row-longterm' : '';
+      let dateHtml = `<div class="date-main">${isLongTerm(ev) ? ev.startDate+' ~ '+ev.endDate : ev.startDate}</div>`;
+      if(ev.time) dateHtml += `<div class="date-sub">${ev.time}</div>`;
+      dateHtml += `<div class="date-sub">造訪日：${date}</div>`;
+      return `<tr class="${rowClass.trim()}" data-fav-id="${ev.id}" data-date="${date}" draggable="true">
+        <td class="col-check"><span class="drag-handle" title="拖拉排序">⠿</span><input type="checkbox" checked data-remove-id="${ev.id}"></td>
+        <td>${ev.region?`<div class="cell-title">${ev.region}</div>`:''} ${macro?`<div class="region-tag">${macro}</div>`:''}</td>
+        <td>${typeBadgeHtml(ev.types)}</td>
+        <td><div class="cell-title"><span class="venue-inline-dot" style="background:${vtColor}" title="${ev.venueType||''}"></span>${ev.venue}</div>${ev.address?`<div class="cell-sub">${ev.address}</div>`:''}</td>
+        <td><div class="cell-title">${ev.name}</div>${ev.desc?`<div class="cell-sub">${ev.desc}</div>`:''}</td>
+        <td>${dateHtml}</td>
+        <td>${linkHtml}</td>
+      </tr>`;
+    }).join('');
+    return `<div class="date-label">${date}</div>
+      <div class="fav-table-wrap"><table class="fav-table" data-drag-date="${date}"><thead><tr><th></th><th>縣市</th><th>類型</th><th>展演館</th><th>節目</th><th>日期/時間</th><th>連結</th></tr></thead><tbody>${rowsHtml}</tbody></table></div>`;
+  }).join('');
+  content.innerHTML = sections;
+
+  // bind checkbox remove
+  content.querySelectorAll('[data-remove-id]').forEach(cb=>{
+    cb.onchange = async ()=>{
+      if(!cb.checked){
+        const id = cb.dataset.removeId;
+        delete favMap[id];
+        // also remove from favOrder
+        Object.values(favOrder).forEach(arr=>{ const i=arr.indexOf(id); if(i>-1) arr.splice(i,1); });
+        saveFavOrder();
+        await saveFavorites();
+        renderAll();
+      }
+    };
+  });
+
+  // bind drag-and-drop per table (per date group)
+  content.querySelectorAll('table[data-drag-date]').forEach(table=>{
+    const date = table.dataset.dragDate;
+    const tbody = table.querySelector('tbody');
+    let dragSrc = null;
+
+    tbody.addEventListener('dragstart', e=>{
+      const tr = e.target.closest('tr[data-fav-id]');
+      if(!tr) return;
+      dragSrc = tr;
+      tr.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    tbody.addEventListener('dragend', e=>{
+      const tr = e.target.closest('tr[data-fav-id]');
+      if(tr) tr.classList.remove('dragging');
+      tbody.querySelectorAll('.drag-over').forEach(r=>r.classList.remove('drag-over'));
+      dragSrc = null;
+    });
+    tbody.addEventListener('dragover', e=>{
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      const tr = e.target.closest('tr[data-fav-id]');
+      tbody.querySelectorAll('.drag-over').forEach(r=>r.classList.remove('drag-over'));
+      if(tr && tr !== dragSrc) tr.classList.add('drag-over');
+    });
+    tbody.addEventListener('drop', e=>{
+      e.preventDefault();
+      const target = e.target.closest('tr[data-fav-id]');
+      if(!target || !dragSrc || target === dragSrc) return;
+      // reorder in DOM
+      const rows = [...tbody.querySelectorAll('tr[data-fav-id]')];
+      const srcIdx = rows.indexOf(dragSrc), tgtIdx = rows.indexOf(target);
+      if(srcIdx < tgtIdx) target.after(dragSrc);
+      else target.before(dragSrc);
+      target.classList.remove('drag-over');
+      // persist new order
+      const newOrder = [...tbody.querySelectorAll('tr[data-fav-id]')].map(r=>r.dataset.favId);
+      favOrder[date] = newOrder;
+      saveFavOrder();
+    });
+  });
+}
+
+function renderAll(){
+  renderCalendar();
+  if(selectedDate) renderDayDetail(selectedDate);
+  renderListView();
+  renderFavorites();
+}
+
+function buildExportHtml(){
+  const ids = Object.keys(favMap);
+  const favEvents = activities.filter(a=>ids.includes(a.id))
+    .map(a=>({...a, visitDate: favMap[a.id]}))
+    .sort((a,b)=>a.visitDate.localeCompare(b.visitDate));
+  const byDate = {};
+  favEvents.forEach(ev=>{ (byDate[ev.visitDate]=byDate[ev.visitDate]||[]).push(ev); });
+  const sections = Object.keys(byDate).sort().map(date=>{
+    const rows = byDate[date].map(ev=>{
+      const linkHtml = ev.link ? `<a href="${ev.link}" target="_blank" rel="noopener">前往連結</a>` : '—';
+      const fbHtml = ev.fbUrl ? `<a href="${ev.fbUrl}" target="_blank" rel="noopener">FB原文</a>` : '—';
+      const dateStr = isLongTerm(ev) ? `${ev.startDate} ~ ${ev.endDate}` : ev.startDate;
+      const timeStr = ev.time || '';
+      return `<tr>
+        <td>${ev.region||'—'}</td>
+        <td>${(ev.types||[]).join('、')}</td>
+        <td><strong>${ev.venue}</strong>${ev.address?`<div class="sub">${ev.address}</div>`:''}</td>
+        <td><strong>${ev.name}</strong>${ev.desc?`<div class="sub">${ev.desc}</div>`:''}</td>
+        <td>${dateStr}${timeStr?`<div class="sub">${timeStr}</div>`:''}</td>
+        <td>${linkHtml}</td>
+        <td>${fbHtml}</td>
+      </tr>`;
+    }).join('');
+    return `<h3>${date}</h3><table>
+      <thead><tr><th>縣市</th><th>類型</th><th>地點</th><th>展演名</th><th>日期/時間</th><th>購票網址</th><th>FB原文</th></tr></thead>
+      <tbody>${rows}</tbody></table>`;
+  }).join('');
+  return `<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>我的假期活動清單</title>
+  <style>
+  body{font-family:'蘋方-繁','PingFang TC','Microsoft JhengHei','微軟正黑體','Heiti TC',Arial,sans-serif;max-width:960px;margin:40px auto;color:#222;padding:0 20px;}
+  h1{color:#1B2A4A;border-bottom:3px solid #1B2A4A;padding-bottom:10px;}
+  h3{color:#C1442E;margin-top:26px;margin-bottom:6px;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th{background:#EFE9DA;color:#1B2A4A;text-align:left;padding:8px 10px;border-bottom:2px solid #1B2A4A;}
+  td{padding:8px 10px;border-bottom:1px solid #d8d0bd;vertical-align:top;}
+  .sub{font-size:11.5px;color:#6b6558;margin-top:2px;}
+  a{color:#2F6F62;font-weight:700;}
+  </style></head>
+  <body><h1>我的假期活動規劃</h1>${favEvents.length ? sections : '<p>尚未選擇任何活動。</p>'}</body></html>`;
+}
+
+/* ---- iCalendar (.ics) export — one file per venueType ---- */
+function icsEscape(str){ return (str||'').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n'); }
+function icsDate(dateStr){ return dateStr.replace(/-/g,''); }        // YYYY-MM-DD → YYYYMMDD
+function icsUid(ev, vtSlug){ return `${ev.id}-${vtSlug}-vp@taiwan-vacation`; }
+
+function buildIcsByVenueType(){
+  const ids = Object.keys(favMap);
+  const favEvents = activities.filter(a=>ids.includes(a.id))
+    .map(a=>({...a, visitDate: favMap[a.id]}));
+  if(!favEvents.length) return null;
+
+  // 依 venueType 分組
+  const byVT = {};
+  favEvents.forEach(ev=>{
+    const vt = ev.venueType || '未分類';
+    (byVT[vt] = byVT[vt]||[]).push(ev);
+  });
+
+  // 每個 venueType 產生一份 .ics
+  const files = Object.entries(byVT).map(([vt, evs])=>{
+    const slug = vt.replace(/[^\w\u4e00-\u9fff]/g,'_');
+    const calName = `假期規劃・${vt}`;
+    const vevents = evs.map(ev=>{
+      const dtstart = icsDate(ev.visitDate);
+      // DTEND = 造訪日+1天(全天事件)
+      const d = new Date(ev.visitDate.replace(/-/g,'/'));
+      d.setDate(d.getDate()+1);
+      const dtend = `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
+
+      // 說明欄:時間 + 地址 + 描述 + 連結
+      const descParts = [];
+      if(ev.time) descParts.push(`時間：${ev.time}`);
+      if(isLongTerm(ev)) descParts.push(`展期：${ev.startDate} ～ ${ev.endDate}`);
+      if(ev.address) descParts.push(`地址：${ev.address}`);
+      if(ev.desc) descParts.push(ev.desc);
+      if(ev.link) descParts.push(`售票/官網：${ev.link}`);
+      if(ev.fbUrl) descParts.push(`FB原文：${ev.fbUrl}`);
+
+      const uid = icsUid(ev, slug);
+      const summary = icsEscape(`${ev.name}｜${ev.venue}`);
+      const location = icsEscape(ev.address || ev.venue);
+      const description = icsEscape(descParts.join('\n'));
+      const url = ev.link || ev.fbUrl || '';
+
+      return [
+        'BEGIN:VEVENT',
+        `UID:${uid}`,
+        `DTSTART;VALUE=DATE:${dtstart}`,
+        `DTEND;VALUE=DATE:${dtend}`,
+        `SUMMARY:${summary}`,
+        `LOCATION:${location}`,
+        `DESCRIPTION:${description}`,
+        url ? `URL:${url}` : '',
+        'END:VEVENT'
+      ].filter(Boolean).join('\r\n');
+    }).join('\r\n');
+
+    const ics = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Taiwan Vacation Planner//ZH',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      `X-WR-CALNAME:${calName}`,
+      'X-WR-TIMEZONE:Asia/Taipei',
+      vevents,
+      'END:VCALENDAR'
+    ].join('\r\n');
+
+    return { filename: `假期規劃_${vt}.ics`, content: ics };
+  });
+
+  return files;
+}
+
+function exportToGoogleCalendar(){
+  const files = buildIcsByVenueType();
+  if(!files){ alert('尚未選擇任何活動。'); return; }
+  // 依序下載每個 .ics 檔,間隔 400ms 避免瀏覽器擋住
+  files.forEach((f, i)=>{
+    setTimeout(()=> downloadFile(f.filename, f.content, 'text/calendar;charset=utf-8'), i * 400);
+  });
+  // 下載完後提示匯入步驟
+  const totalMs = files.length * 400 + 200;
+  setTimeout(()=>{
+    const vtList = files.map(f=>f.filename).join('\n  • ');
+    alert(`已下載 ${files.length} 個 .ics 檔案：\n  • ${vtList}\n\n匯入步驟：\n1. 開啟 Google 日曆\n2. 左側「其他日曆」→ 點「+」→ 匯入\n3. 逐一選取下載的 .ics 檔，每個會建立一個獨立日曆\n4. 在 Google 日曆中為各日曆設定不同顏色 ✓`);
+  }, totalMs);
+}
+function downloadFile(filename, content, mime){
+  const blob = new Blob([content], {type:mime});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download=filename; document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+document.getElementById('prevMonth').onclick = ()=>{ currentMonth.setMonth(currentMonth.getMonth()-1); selectedDate=null; document.getElementById('dayDetail').classList.add('hidden'); renderCalendar(); };
+document.getElementById('nextMonth').onclick = ()=>{ currentMonth.setMonth(currentMonth.getMonth()+1); selectedDate=null; document.getElementById('dayDetail').classList.add('hidden'); renderCalendar(); };
+document.getElementById('searchBox').oninput = renderAll;
+
+document.getElementById('btnViewCal').onclick = ()=>{
+  currentView='calendar';
+  document.getElementById('calendarView').classList.remove('hidden');
+  document.getElementById('listView').classList.add('hidden');
+  document.getElementById('btnViewCal').classList.add('active');
+  document.getElementById('btnViewList').classList.remove('active');
+};
+document.getElementById('btnViewList').onclick = ()=>{
+  currentView='list';
+  document.getElementById('listView').classList.remove('hidden');
+  document.getElementById('calendarView').classList.add('hidden');
+  document.getElementById('btnViewList').classList.add('active');
+  document.getElementById('btnViewCal').classList.remove('active');
+  renderListView();
+};
+
+document.getElementById('btnImportToggle').onclick = ()=> document.getElementById('importPanel').classList.toggle('hidden');
+document.getElementById('btnImportCancel').onclick = ()=> document.getElementById('importPanel').classList.add('hidden');
+document.getElementById('btnImportGo').onclick = async ()=>{
+  const txt = document.getElementById('importText').value.trim();
+  if(!txt) return;
+  try{
+    const parsed = JSON.parse(txt);
+    if(!Array.isArray(parsed)) throw new Error('需為陣列');
+    const byId = {};
+    activities.forEach(a=>byId[a.id]=a);
+    parsed.forEach(p=>{ if(p.id) byId[p.id]=p; });
+    activities = Object.values(byId);
+    localStorage.setItem(STORAGE_KEYS.activitiesSource, '手動匯入');
+    saveActivities();
+    initFilters();
+    renderAll();
+    document.getElementById('importPanel').classList.add('hidden');
+    document.getElementById('importText').value='';
+    showStatus('ok', `已合併匯入,目前共 <b>${activities.length}</b> 筆活動 <span class="badge">來源:手動匯入</span> <span class="badge">${new Date().toLocaleString('zh-TW')}</span>`);
+  }catch(e){ alert('JSON 格式錯誤:' + e.message); }
+};
+
+document.getElementById('btnReload').onclick = async ()=>{
+  await loadData();
+  initFilters();
+  renderAll();
+};
+
+document.getElementById('btnClearData').onclick = async ()=>{
+  if(!confirm('確定要清除瀏覽器裡的活動快取嗎?下次載入會重新讀取 events.json。(收藏內容不會受影響)')) return;
+  localStorage.removeItem(STORAGE_KEYS.activities);
+  localStorage.removeItem(STORAGE_KEYS.activitiesUpdatedAt);
+  localStorage.removeItem(STORAGE_KEYS.activitiesSource);
+  await loadData();
+  initFilters();
+  renderAll();
+};
+document.getElementById('btnClearFav').onclick = async ()=>{
+  if(!confirm('確定要清空目前的收藏清單嗎？')) return;
+  favMap = {}; favOrder = {}; saveFavOrder(); await saveFavorites(); renderAll();
+};
+document.getElementById('btnExportHtml').onclick = ()=>{
+  downloadFile('我的假期活動清單.html', buildExportHtml(), 'text/html');
+};
+document.getElementById('btnExportGcal').onclick = exportToGoogleCalendar;
+document.getElementById('btnExportPdf').onclick = ()=>{ window.print(); };
+
+(async function init(){
+  await loadData();
+  loadFavOrder();
+  initFilters();
+  renderAll();
+})();
+</script>
+</body>
+</html>
