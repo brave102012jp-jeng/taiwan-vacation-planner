@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "npm-s-02",
+    "name": "織光顯影：亞洲織品的物質交流與故事流轉",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-08-01",
+    "endDate": "2026-11-01",
+    "time": "09:00-17:00",
+    "desc": "精選院藏亞洲織品,分為華麗燦光與智慧靈光兩大主題。",
+    "link": "https://south.npm.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/npmsouth/posts/pfbid02bGLjhtCNgugfoeJBXLtqYoGHwCvDCC3YfoANV31nWZ1sRFC7g8fpsumGyKis1ynLl"
+  },
+  {
+    "id": "npm-s-03",
+    "name": "2026水韻墨舞｜水舞燈光展演",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "特殊季節活動",
+      "戶外展演"
+    ],
+    "startDate": "2026-06-26",
+    "endDate": "2026-08-30",
+    "time": "16:30-21:30(每15分鐘1場,21:15最後一場)",
+    "desc": "至善湖水舞燈光展演,4大演出單元:青花流芳、墨染千秋、翠玉靈動等,呼應錯字書法特展。",
+    "link": "https://south.npm.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/1033777736105319/"
+  },
+  {
+    "id": "npm-s-05",
+    "name": "2026夏日親子藝術月—藝字遊戲",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "特殊季節活動",
+      "親子活動"
+    ],
+    "startDate": "2026-06-30",
+    "endDate": "2026-08-30",
+    "time": "09:00-17:00",
+    "desc": "互動寫字裝置「字怪仙境」、書法練字區「字遊書齋」、實境解謎「字怪追緝令」、吉祥物見面會、8/22戶外劇場「藝字特攻隊」等。",
+    "link": "https://south.npm.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/1584689476571176/"
+  },
+  {
+    "id": "npm-s-08",
+    "name": "《最炫賢拜》──青銀共融音樂會",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "14:30",
+    "desc": "2026嘉義民族音樂節,集賢廳自由入場。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-09",
+    "name": "《樂響校園》營隊暨成果發表音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-26",
+    "endDate": "2026-08-26",
+    "time": "18:30",
+    "desc": "2026嘉義民族音樂節,地點嘉義縣表演藝術中心芙蕖廳,自由入場。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-10",
+    "name": "《聽說・高粱》沉浸式品酒音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "18:30",
+    "desc": "2026嘉義民族音樂節,地點嘉義縣表演藝術中心芙蕖廳,購票入場。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-11",
+    "name": "《茶與音的對話》──雲霧溯尋 沉浸式品茶音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "09:00、11:00",
+    "desc": "2026嘉義民族音樂節,地點嘉義縣表演藝術中心芙蕖廳,購票入場。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-12",
+    "name": "《柴柴去𨑨迌》——親子音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會",
+      "親子活動"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "14:00、16:00",
+    "desc": "2026嘉義民族音樂節,地點嘉義縣表演藝術中心芙蕖廳,購票入場。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-13",
+    "name": "《NEO-TRADITION 流響東亞》——臺韓交流音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-23",
+    "endDate": "2026-08-23",
+    "time": "14:30",
+    "desc": "2026嘉義民族音樂節,地點嘉義縣表演藝術中心芙蕖廳。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-14",
+    "name": "《時光隧道下的兩端IX》——溯 2026嘉義民族音樂節閉幕音樂會",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-24",
+    "time": "19:30",
+    "desc": "2026嘉義民族音樂節閉幕音樂會,地點嘉義縣表演藝術中心演藝廳。",
+    "link": "https://linktr.ee/chiayiethnicmusicfestival",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02DQ5qCJTdXvxfeU47e4P11P4GAZ5cwPVToDxZg1LYjpsvQcuwCbCUX7qbSjry1Gydl"
+  },
+  {
+    "id": "npm-s-15",
+    "name": "豆莢寶寶兒童音樂會《咻咻～魔幻擊樂秀》",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會",
+      "親子活動"
+    ],
+    "startDate": "2026-10-18",
+    "endDate": "2026-10-18",
+    "time": "14:30",
+    "desc": "朱宗慶打擊樂團2製作,結合打擊樂演奏、互動體驗與肢體律動。中心LINE好友購票9折。",
+    "link": "https://www.opentix.life/event/2046829520049606657",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid02ovzoqEJHqBN6mXnt8pQfGetFjpEcE3djgYmmmfFkX49cdHhcX8Te3uvHqrPBdHGtl"
+  },
+  {
+    "id": "tnam-01",
+    "name": "agnès b. on aime le graff!! 我們愛塗鴉藝術特展",
+    "region": "臺南市",
+    "venue": "臺南市美術館2館",
+    "address": "臺南市中西區忠義路二段1號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-06-25",
+    "endDate": "2026-09-20",
+    "time": "10:00-18:00",
+    "desc": "展於I、J展覽室,呈現33件Agnès女士私人珍藏的街頭藝術原作。",
+    "link": "https://www.tnam.museum",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid0tzmocPo6jhNba2LRJnBYmuhPjAkvto8HUvNvmCzzw1VpmSH4kAkx456BNkZJatryl"
+  },
+  {
+    "id": "tnam-02",
+    "name": "隨波逐潮:流動的跨文化海洋敘事",
+    "region": "臺南市",
+    "venue": "臺南市美術館2館",
+    "address": "臺南市中西區忠義路二段1號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-06-01",
+    "endDate": "2026-10-01",
+    "time": "10:00-18:00",
+    "desc": "展於B–F展覽室,含專家導覽場次(7/25、8/8、9/12)。",
+    "link": "https://www.tnam.museum",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid0Bz4vBKZ3kxFLHwKMThnSqbniQ7eUG54iZsVJrNgUTkYk6GDbmYC9ScR8edCBRvtXl"
+  },
+  {
+    "id": "tnam-03",
+    "name": "搜查記:警察異能館",
+    "region": "臺南市",
+    "venue": "臺南市美術館2館",
+    "address": "臺南市中西區忠義路二段1號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-06-30",
+    "endDate": "2027-01-10",
+    "time": "10:00-18:00",
+    "desc": "以「原臺南公園管理所」警徽等文物修復過程為題,結合藝術創作探討時代記憶。",
+    "link": "https://www.tnam.museum",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid0JJ97LfRbf1T57KxnREYoiwwucpNi9TWCZTdYiNro7XJjmJq7PMpBvKz5zBwn3nePl"
+  },
+  {
+    "id": "tnam-05",
+    "name": "異能搜查隊體驗工作坊:編導式攝影工作坊",
+    "region": "臺南市",
+    "venue": "臺南市美術館2館",
+    "address": "臺南市中西區忠義路二段1號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "14:30-17:00",
+    "desc": "講師孫敏龍警官,搜查記:警察異能館系列體驗,費用388元(含門票、材料、覓南美1本、警政文庫禮物1份),地點閱讀之森。",
+    "link": "https://www.tnam.museum/event/detail/732",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid0FwdMQ6NDMUrqyECh81c4n813z9E3Zrfb149tV5xzouWBoon53VGerU2RxTghVcjml"
+  },
+  {
+    "id": "tnam-06",
+    "name": "異能搜查隊體驗工作坊:龍王秘寶琥珀解密工作坊",
+    "region": "臺南市",
+    "venue": "臺南市美術館1館",
+    "address": "臺南市中西區南門路37號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "time": "14:00-16:00",
+    "desc": "講師黃憶人,探索琥珀跨越千萬年的時間旅程並親手完成琥珀創作,費用888元,地點中央廊道。",
+    "link": "https://www.tnam.museum/event/detail/732",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid0FwdMQ6NDMUrqyECh81c4n813z9E3Zrfb149tV5xzouWBoon53VGerU2RxTghVcjml"
+  },
+  {
+    "id": "nmtl-01",
+    "name": "歡喜扮戲團《春花進行曲》",
+    "region": "臺南市",
+    "venue": "國立臺灣文學館",
+    "address": "臺南市中西區湯德章大道1號",
+    "types": [
+      "展演",
+      "講座"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "14:00-16:00",
+    "desc": "彭雅玲領軍11位年輕詩人,以聲音、光影呈現客語青春詩,地點1樓文學沙龍。",
+    "link": "https://www.nmtl.gov.tw",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/NmtlTainan/posts/pfbid0QcsJoDpo7wdgarp4nhbSZhSL5iRv6CdJdna9GjXY5SwdjwHD3uuo2FcA21YkGAAAl"
+  },
+  {
+    "id": "nmtl-03",
+    "name": "第23屆全國臺灣文學研究生學術研討會",
+    "region": "臺南市",
+    "venue": "國立臺灣文學館",
+    "address": "臺南市中西區湯德章大道1號",
+    "types": [
+      "研討會"
+    ],
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-18",
+    "time": "09:00-17:00",
+    "desc": "主題:流域與疆界——臺灣類型文學的多元視野。",
+    "link": "https://www.nmtl.gov.tw",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/NmtlTainan/posts/pfbid035BAP22dfukXChzBqx9QPixnW5Nt6mWWTqmfNHP2AoAhGb3NdASZyiTALnmt4KfoXl"
+  },
+  {
+    "id": "chimei-01",
+    "name": "埃及之王:法老 特展",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-06-01",
+    "endDate": "2027-01-10",
+    "time": "09:30-17:30",
+    "desc": "與大英博物館合作,展出古埃及法老文物。",
+    "link": "https://www.chimeimuseum.org",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/chimeimuseum/posts/pfbid0Ewdu8UbtPdVKj7j5uZJLm2XqMZniUDR2tLMJa6JDdfeDxdcXDabXbpw99TrJtKeEl"
+  },
+  {
+    "id": "cma-01",
+    "name": "公共視域:嘉義當代藝術場景1996–2006",
+    "region": "嘉義市",
+    "venue": "嘉義市立美術館",
+    "address": "嘉義市西區廣寧街101號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-07-10",
+    "endDate": "2026-10-25",
+    "time": "09:00-17:00",
+    "desc": "回顧嘉義當代藝術最具爆發力的十年。",
+    "link": "https://cam.chiayi.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/Chiayi.Art.Museum/posts/pfbid02jxg1VoZbu6toqXuT6wwF3uLdjrxff7P8WDReyW5PQNkLvMLdH7EGzFeBkqzeuXcpl"
+  },
+  {
+    "id": "cma-02",
+    "name": "《渺渺沙沙》李宜臻創作個展",
+    "region": "臺中市",
+    "venue": "臺中市大墩文化中心",
+    "address": "臺中市西區英才路600號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-07-13",
+    "endDate": "2026-08-29",
+    "time": "11:00-19:00(每週日公休)",
+    "desc": "地點松風閣畫廊松竹旗艦店,臺中市北屯區松竹路二段349號。",
+    "link": "https://www.dadun.culture.taichung.gov.tw/",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/1052937470770006/"
+  },
+  {
+    "id": "pt-museum-01",
+    "name": "美好與現實並存|黃宏茂創作個展",
+    "region": "屏東縣",
+    "venue": "屏東美術館",
+    "address": "屏東縣屏東市中正路74號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-07-25",
+    "endDate": "2026-08-25",
+    "time": "09:00-17:00",
+    "desc": "101展覽室,象徵主義為主軸,開幕7/26 10:00。",
+    "link": "https://ptam.ptcg.gov.tw/",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/pingtungartmuseum/posts/pfbid02svdbKrTB4di7tX2cGGX8MXauddZEZXfVyrFbDzEbCFXU2e6qUSX3VZin9yN81rLzl"
+  },
+  {
+    "id": "tnhis-01",
+    "name": "實境解謎:未完城時空任務(8/8、8/15、8/22)",
+    "region": "臺南市",
+    "venue": "臺南市歷史館",
+    "address": "臺南市中西區郡王里開山路152號",
+    "types": [
+      "特殊季節活動",
+      "解謎活動"
+    ],
+    "startDate": "2026-08-08",
+    "endDate": "2026-08-22",
+    "time": "上午場10:00-12:00、下午場14:00-16:00",
+    "desc": "化身報社記者透過實境解謎尋找線索,採預約制,每時段限15組,需購買門票。",
+    "link": "https://forms.gle/GwLXZjngsgkDcKpm8",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/Tainanmuseumofhistory/posts/pfbid0cyPuNve89nLaCo5mxvMoWqgJqqBxdPzUeabdPgTSCMAry7sSM4erRMe2kxzvwbHBl"
+  },
+  {
+    "id": "huya-05",
+    "name": "台語意識培力｜你毋知影的台語",
+    "region": "嘉義市",
+    "venue": "嘉義市圖書館(世賢圖書館)",
+    "address": "嘉義市東區啟明路313號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "14:00-15:50",
+    "desc": "講師蘇紋巧,地點湖內里活動中心3樓中教室。",
+    "link": "https://forms.gle/2p9FYTzqVBe4YaDX6",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/chiayicity.cultureman/posts/pfbid02cwsAYsB7j1Hoyh8EttEZueemunvLarghdPS7fANJt585czwcZ3cowMgwHW4rjuMBl"
+  },
+  {
+    "id": "huya-07",
+    "name": "一點點藝術節《聚島》共創工作坊",
+    "region": "嘉義市",
+    "venue": "洪雅書房",
+    "address": "嘉義市東區長榮街116號",
+    "types": [
+      "工作坊",
+      "展覽"
+    ],
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-31",
+    "time": "",
+    "desc": "與新店社區據點同步展開的社區藝術共創計畫,以回收報紙、紙漿等材料創作。",
+    "link": "https://www.facebook.com/hoanyabookstore/posts/pfbid0gqbzH17S6ZbCAEh847bYpwaSqBS8Ww7zPJJX4iMwaRP5L8zntv6swNCvfhiS6Ymel",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/hoanyabookstore/posts/pfbid0gqbzH17S6ZbCAEh847bYpwaSqBS8Ww7zPJJX4iMwaRP5L8zntv6swNCvfhiS6Ymel"
+  },
+  {
+    "id": "surum-01",
+    "name": "《革命家的生活寶物》×《我的世紀末》翁稷安巡迴講座",
+    "region": "臺南市",
+    "venue": "版本書店 SüRüM Bookstore",
+    "address": "臺南市北區開元路148巷33弄9號",
+    "types": [
+      "講座",
+      "分享會"
+    ],
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "time": "14:00-16:30",
+    "desc": "作家翁稷安主講,史明與臺灣史,免費入場。(原訂8/7,已改期至11/14)",
+    "link": "https://www.accupass.com/event/2607130943551375079110",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/SURUMTAINAN/posts/pfbid0Hy2dMCM3ByxMNvb8uisbTpVbKoBApJDKPkhoNBqA8ZoDm7AZpAVXiFo45zvyHjnLl"
+  },
+  {
+    "id": "yoyo-01",
+    "name": "信步漫畫講座:《幕後花絮》左右為男の創作幕後花絮",
+    "region": "高雄市",
+    "venue": "洋洋本屋",
+    "address": "高雄市三民區松江街59號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "time": "14:00-16:00",
+    "desc": "漫畫家信步,高雄市立圖書館x洋洋本屋暑期特別企劃第二場,免費入場需報名。",
+    "link": "https://forms.gle/HFzwdsapKMGscbfY7",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid037YL7paabwnYFPcHnsn3q9EkgT72uVPYKVCDmth15sTLWzkkVNVeawoZHErFgq18Jl&id=61575104366732"
+  },
+  {
+    "id": "wijazz-05",
+    "name": "林紫彤三重奏",
+    "region": "高雄市",
+    "venue": "爵式 WiJazz Records",
+    "address": "高雄市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-21",
+    "time": "20:00",
+    "desc": "",
+    "link": "https://linktr.ee/wijazzrecords",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/wijazzrecords/posts/pfbid0DzpAPyN8BiXYfXsj3wCwJ4LJEsohewp5iUztZzziZfXnwxNMHTUMNhJaDJSMyye1l"
+  },
+  {
+    "id": "wijazz-06",
+    "name": "Sober Cats(x3)",
+    "region": "高雄市",
+    "venue": "爵式 WiJazz Records",
+    "address": "高雄市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "20:00",
+    "desc": "",
+    "link": "https://linktr.ee/wijazzrecords",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/wijazzrecords/posts/pfbid0DzpAPyN8BiXYfXsj3wCwJ4LJEsohewp5iUztZzziZfXnwxNMHTUMNhJaDJSMyye1l"
+  },
+  {
+    "id": "jhouse-06",
+    "name": "等等演完我們要去吃宵夜爵士四重奏",
+    "region": "臺南市",
+    "venue": "宅 · J House Coffee Bar & Jazz",
+    "address": "臺南市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "15:30入場/16:00開始",
+    "desc": "",
+    "link": "https://linktr.ee/jhouse.sja",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/jhouse.sja/posts/pfbid028UcGYXakmu9fr7jd1WJaTbRYmfxGgtdWeztwr7MPipnr7N5XMA2aZfTdDeExHp8ql"
+  },
+  {
+    "id": "jhouse-07",
+    "name": "TYN - Together, Yet Nomadic",
+    "region": "臺南市",
+    "venue": "宅 · J House Coffee Bar & Jazz",
+    "address": "臺南市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "time": "15:30入場/16:00開始",
+    "desc": "",
+    "link": "https://linktr.ee/jhouse.sja",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/jhouse.sja/posts/pfbid028UcGYXakmu9fr7jd1WJaTbRYmfxGgtdWeztwr7MPipnr7N5XMA2aZfTdDeExHp8ql"
+  },
+  {
+    "id": "echo-02",
+    "name": "ALTERED STATES:Holotropics x Temple Smoke x Cowman",
+    "region": "臺中市",
+    "venue": "迴響音樂展演空間",
+    "address": "臺中市中區",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-03",
+    "time": "20:00",
+    "desc": "英國迷幻搖滾Holotropics領銜,預售400/現場500。",
+    "link": "https://www.facebook.com/SoundLiveHouse/posts/pfbid0d9Seba5PZaoBu2PvuUtWftRnzh43iea6FU5r7v5FEY2m2Mrgv1fLH44TQvw14A2rl",
+    "venueType": "livehouse",
+    "fbUrl": "https://www.facebook.com/SoundLiveHouse/posts/pfbid0d9Seba5PZaoBu2PvuUtWftRnzh43iea6FU5r7v5FEY2m2Mrgv1fLH44TQvw14A2rl"
+  },
+  {
+    "id": "echo-03",
+    "name": "OUT OF CONTROL SUMMER",
+    "region": "臺中市",
+    "venue": "迴響音樂展演空間",
+    "address": "臺中市中區",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "11:10進場/11:30開始",
+    "desc": "跨界共演,結合各行各業樂手與學生同台。",
+    "link": "https://www.facebook.com/SoundLiveHouse/posts/pfbid02zFU9brFFJEendcbpAUtUEjZi4vP2RaG5eXdRqNsCujZjEnqenyb1HLVRqBU9abXjl",
+    "venueType": "livehouse",
+    "fbUrl": "https://www.facebook.com/SoundLiveHouse/posts/pfbid02zFU9brFFJEendcbpAUtUEjZi4vP2RaG5eXdRqNsCujZjEnqenyb1HLVRqBU9abXjl"
+  },
+  {
+    "id": "dadun-04",
+    "name": "《藝術新聲·微光燭跡 新銳藝術家聯展》",
+    "region": "臺中市",
+    "venue": "臺中市大墩文化中心",
+    "address": "臺中市西區英才路600號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-07-11",
+    "endDate": "2026-08-29",
+    "time": "詳見Google Map",
+    "desc": "地點ARTAGE藝術時代,台灣台中市大容西街63號2樓之1,展出陳汶慶、陳昱翰、金庭伃等6位藝術家。",
+    "link": "https://www.dadun.culture.taichung.gov.tw/",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/dadunculture/posts/pfbid04ntJRtpsYpcVcive17HdDLgr8xWbiJmphneZ3CEjsPuKtb7qqQCa744hHGnt2UTQl"
+  },
+  {
+    "id": "dadun-05",
+    "name": "「斯土斯民」全球金獎大師劉雲生個展",
+    "region": "臺中市",
+    "venue": "臺中市大墩文化中心",
+    "address": "臺中市西區英才路600號",
+    "types": [
+      "展覽",
+      "導覽"
+    ],
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-19",
+    "time": "",
+    "desc": "90歲藝術家劉雲生水彩個展,地點大墩藝廊(二),8/1、8/8、8/15(六)14:00策展人王隆凱現場導覽。",
+    "link": "https://www.dadun.culture.taichung.gov.tw/",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/dadunculture/posts/pfbid024jPbaf486BTRPzvMV3bXXgM6U6XjQoCjjYFGy9kPHHDAcpTwpFpBepGy5Puw1wLXl"
+  },
+  {
+    "id": "dadun-06",
+    "name": "大墩大師講堂:徐棟英《核心逆齡節拍超慢跑》",
+    "region": "臺中市",
+    "venue": "臺中市大墩文化中心",
+    "address": "臺中市西區英才路600號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "14:00",
+    "desc": "台灣超慢跑第一人徐棟英教練主講,地點大墩文化中心B1演講廳,7/27上午9時開放網路報名。",
+    "link": "https://reurl.cc/Ymja6a",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/dadunculture/posts/pfbid0LpvFq3nhPBWVSgXBDDjvULC1D7Fq6PJQ8cGd1aUG7ysnKJXzrU6oW1xCSpjTmBqNl"
+  },
+  {
+    "id": "kmc-01",
+    "name": "2026就喝Chill派對:泰精選S2",
+    "region": "高雄市",
+    "venue": "高雄流行音樂中心",
+    "address": "高雄市鹽埕區真愛路1號",
+    "types": [
+      "特殊季節活動",
+      "特殊派對",
+      "音樂祭",
+      "市集"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-23",
+    "time": "",
+    "desc": "泰國主題音樂派對,結合Ozone、PALLAS等樂團演出、泰式市集與水上拳擊體驗,地點珊瑚礁群,高雄流行音樂中心與DITP泰國商務處合辦。",
+    "link": "https://kpmc.com.tw/",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/Kaohsiungmusiccenter/posts/pfbid0JuJk3A68Rr6Tq2Su4TqajPYf8jLLhULWs2NHkrThTMRDVa67utRPdgCW2Uri6Rpel"
+  },
+  {
+    "id": "kmc-04",
+    "name": "2026年8月市集:藝起職原市",
+    "region": "高雄市",
+    "venue": "高雄流行音樂中心",
+    "address": "高雄市鹽埕區真愛路1號",
+    "types": [
+      "市集"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-16",
+    "time": "14:00-20:00",
+    "desc": "海音館廣場,職原市主辦。",
+    "link": "https://kpmc.tw/kp10kq6zq",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/Kaohsiungmusiccenter/posts/pfbid02Uij75QjmgHqqKrf2sFQxKXpuadbqS9aaBvKkEJVcW9CuaH2gYYkHuK2brmwXycwtl"
+  },
+  {
+    "id": "cymuseum-01",
+    "name": "兒童城市建築共創展｜城市築光隊工作坊",
+    "region": "嘉義市",
+    "venue": "嘉義市立博物館",
+    "address": "嘉義市東區中山路275號",
+    "types": [
+      "工作坊",
+      "親子活動"
+    ],
+    "startDate": "2026-08-09",
+    "endDate": "2026-09-05",
+    "time": "10:30-12:00",
+    "desc": "特展教育活動,場次8/9、8/23、9/5,建議5-12歲親子參與,報名費100元,展期至9/30。",
+    "link": "https://pse.is/9d95fr",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/cymmuseum/posts/pfbid02QcRuoBuXyWxTmsVgceGLKqrEEP88pVHsRMq4PKkWhgCdsfFjhoED736joBB4sP6el"
+  },
+  {
+    "id": "central-04",
+    "name": "中央迴響 長笛重奏音樂會",
+    "region": "臺中市",
+    "venue": "中央書局",
+    "address": "臺中市中區臺灣大道一段235號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "14:00-16:00",
+    "desc": "舞笛室內樂團演出。",
+    "link": "https://reurl.cc/aEkxj4",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/centralbook.1927/posts/pfbid0kksRtkiS2xacLRb9KEsccfn9zPTqrGAQM3iu3gBLWevPbAA2znundxVrrjrv1NfUl"
+  },
+  {
+    "id": "ntmofa-01",
+    "name": "115年全國美術展",
+    "region": "臺中市",
+    "venue": "國立臺灣美術館",
+    "address": "臺中市西區五權西路一段2號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-07-18",
+    "endDate": "2026-10-11",
+    "time": "",
+    "desc": "114件作品自逾千件參賽作品脫穎而出,並展出4位免審查獎藝術家共同參展,地點102-107、203-205展覽室及美術街。",
+    "link": "https://www.ntmofa.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/ntmofa/posts/pfbid0KdF3bkGV5rFLZvUJFaYGSfUmurQHpyLmKNK2GCEzrcyM1GPY2f1pCJPtnpdusuS3l"
+  },
+  {
+    "id": "ntmofa-02",
+    "name": "Mr. ART 的藝術線索追緝令",
+    "region": "臺中市",
+    "venue": "國立臺灣美術館",
+    "address": "臺中市西區五權西路一段2號",
+    "types": [
+      "特殊季節活動",
+      "親子活動"
+    ],
+    "startDate": "2026-07-15",
+    "endDate": "2026-08-15",
+    "time": "(每週一休館)",
+    "desc": "暑期限定,帶著限量Mr. ART娃娃穿梭展場挑戰6大藝術任務,現場報名400元(可用文化幣),地點1樓服務台。",
+    "link": "https://www.ntmofa.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/ntmofa/posts/pfbid02b92M4JdUVRKYXDdDzNjCorHbfiB5N9tGDHHMszNK1m3mCJVD54hDmGgrGqVRxziVl"
+  },
+  {
+    "id": "nmth-01",
+    "name": "轉機:臺灣女子移動紀事特展",
+    "region": "臺南市",
+    "venue": "國立臺灣歷史博物館",
+    "address": "臺南市安南區長和路一段250號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-01-01",
+    "endDate": "2026-08-30",
+    "time": "09:00-17:00",
+    "desc": "由臺史博4位女性研究人員策展,從身體與制度限制談起,呈現不同時代臺灣女子在島內與跨國界的移動經驗,地點4樓第1特展室。",
+    "link": "https://www.nmth.gov.tw/News_Content2.aspx?n=4105&s=246435",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/NMTH100/posts/pfbid023maoXrkBrGeAcA7TxgL6ib9tM12HyRknhzCskD9K5VzPW7NF6gMupjFn6BL4zQnql"
+  },
+  {
+    "id": "nmth-02",
+    "name": "亞洲在場:臺灣與亞洲運動會",
+    "region": "臺南市",
+    "venue": "國立臺灣歷史博物館",
+    "address": "臺南市安南區長和路一段250號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-01-01",
+    "endDate": "2026-10-18",
+    "time": "09:00-17:00",
+    "desc": "回看臺灣保齡球等競技運動三十年來的起落,呼應2026愛知．名古屋亞運,地點4樓第2特展室。",
+    "link": "https://www.nmth.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/NMTH100/posts/pfbid02pFtd4HsJSUcEhiX1VSoKCBdZ591qhBiMoLXCQvNpbSsJcPZqXutosyvb4QHuzA78l"
+  },
+  {
+    "id": "chimei-02",
+    "name": "2026奇美音樂節:布拉姆斯與他的時代｜薛志璋小提琴獨奏會",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-09-19",
+    "endDate": "2026-09-19",
+    "time": "19:30",
+    "desc": "小提琴家薛志璋x鋼琴家汪奕聞,史特拉底瓦里名琴演繹布拉姆斯,早鳥8折。",
+    "link": "https://reurl.cc/kpGdNd",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/chimeimuseum/posts/pfbid0BCkEKDLaVAfXMRkHh8xtpzqbBKtm2MtKYqLJNXEhihRYvD8Lz7cXRGuCDn6FptMHl"
+  },
+  {
+    "id": "pt-museum-02",
+    "name": "關係的筆觸|柯良志繪畫創作個展",
+    "region": "屏東縣",
+    "venue": "屏東美術館",
+    "address": "屏東縣屏東市中正路74號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-07-25",
+    "endDate": "2026-08-25",
+    "time": "09:00-17:00",
+    "desc": "102展覽室,國立臺東大學美術產業學系副教授柯良志個展。",
+    "link": "https://ptam.ptcg.gov.tw/",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/pingtungartmuseum/posts/pfbid0JHV73Stx5qLqzeMGsCStiH7u6fZSdrSg7Ka2w88VkcZ9zuZbJdiHmH1GQN2VpgHJl"
+  },
+  {
+    "id": "nmns-01",
+    "name": "多元綠能主題展",
+    "region": "臺中市",
+    "venue": "國立自然科學博物館",
+    "address": "臺中市北區館前路1號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-07-01",
+    "endDate": "2026-09-27",
+    "time": "09:00-17:00",
+    "desc": "科博館B1自然科學藝術廊道,含互動式展具,搭配假日DIY活動。",
+    "link": "https://www.nmns.edu.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/nmnsTaiwan/posts/pfbid0HB3wBsbvMBDn4KnxG4f5PRkNWXoBGYCioV4FmwJEjckwbHub8RxuGiEYm8ArKAPvl"
+  },
+  {
+    "id": "nmns-02",
+    "name": "多元綠能假日DIY活動(8/8、8/22、9/5、9/19)",
+    "region": "臺中市",
+    "venue": "國立自然科學博物館",
+    "address": "臺中市北區館前路1號",
+    "types": [
+      "工作坊",
+      "親子活動"
+    ],
+    "startDate": "2026-08-08",
+    "endDate": "2026-09-19",
+    "time": "13:30-15:00",
+    "desc": "B1自然科學藝術廊道,線上報名。",
+    "link": "https://forms.gle/fN5ca9x5nJT2mxqZ6",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/nmnsTaiwan/posts/pfbid0HB3wBsbvMBDn4KnxG4f5PRkNWXoBGYCioV4FmwJEjckwbHub8RxuGiEYm8ArKAPvl"
+  },
+  {
+    "id": "nmns-03",
+    "name": "大地瑰寶EARTH'S TREASURES礦物常設展",
+    "region": "臺中市",
+    "venue": "國立自然科學博物館",
+    "address": "臺中市北區館前路1號",
+    "types": [
+      "展覽",
+      "常設展"
+    ],
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "time": "09:00-16:45",
+    "desc": "地球環境廳,憑展示場門票或恐龍卡入場。",
+    "link": "https://www.nmns.edu.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/nmnsTaiwan/posts/pfbid0G3xm35nF35k69WvVUppe2z6GBn27i6pbemYsyRBQm2MBTambXbau9BnfybcEKcCBl"
+  },
+  {
+    "id": "nmns-04",
+    "name": "4D劇場《恐龍超世界:跨越億萬年的親子之愛》",
+    "region": "臺中市",
+    "venue": "國立自然科學博物館",
+    "address": "臺中市北區館前路1號",
+    "types": [
+      "特殊季節活動",
+      "親子活動"
+    ],
+    "startDate": "2026-07-01",
+    "endDate": "2027-06-30",
+    "time": "10:15、11:45、13:15、14:45、16:15",
+    "desc": "全新恐龍主題4D電影,呈現恐手龍、傷齒龍與下一代的親情故事。",
+    "link": "https://www.nmns.edu.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/nmnsTaiwan/posts/pfbid029P2gHoraPg97cmxmNGviUVc4pwqApdXQZcPpuLJHMYZxYVnpcjp1tTzC8Gyvk7sKl"
+  },
+  {
+    "id": "chwm-01",
+    "name": "女作家 She Wrote Chiayi",
+    "region": "嘉義市",
+    "venue": "嘉義文學館：東門町1923",
+    "address": "嘉義市東區公明路236號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-07-21",
+    "endDate": "2026-11-08",
+    "time": "09:00-17:00",
+    "desc": "衛星展區於世賢圖書館一樓入口處,展出張李德和、蕭麗紅等八位女作家。",
+    "link": "https://www.facebook.com/chiayilibrary/posts/pfbid02irTWQdn827ikVerDt1kNEsupnB2FK4WLUWT8iuJqnGdAqqy5KxnRCqKSQyVtr6oFl",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/chiayilibrary/posts/pfbid02irTWQdn827ikVerDt1kNEsupnB2FK4WLUWT8iuJqnGdAqqy5KxnRCqKSQyVtr6oFl"
+  },
+  {
+    "id": "ylph-05",
+    "name": "《牛爺爺的心願》為我的醫療旅程設定航線",
+    "region": "雲林縣",
+    "venue": "雲林表演廳",
+    "address": "雲林縣斗六市大學路三段310號",
+    "types": [
+      "表演"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "14:30",
+    "desc": "索票入場。",
+    "link": "https://tosrpapc.kktix.cc/events/26d6961e",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/yunlinperformance/"
+  },
+  {
+    "id": "ylph-06",
+    "name": "《超人力霸王舞台劇 In Taiwan 2026》童歡藝術",
+    "region": "雲林縣",
+    "venue": "雲林表演廳",
+    "address": "雲林縣斗六市大學路三段310號",
+    "types": [
+      "舞台劇",
+      "親子活動"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "13:30、17:00",
+    "desc": "",
+    "link": "https://reurl.cc/Ggm2ax",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/yunlinperformance/"
+  },
+  {
+    "id": "ylph-07",
+    "name": "《宮崎駿動畫配樂II》狂美交響管樂團",
+    "region": "雲林縣",
+    "venue": "雲林表演廳",
+    "address": "雲林縣斗六市大學路三段310號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-21",
+    "time": "19:30",
+    "desc": "",
+    "link": "https://www.opentix.life/event/2013099814073860097",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/yunlinperformance/"
+  },
+  {
+    "id": "ylph-08",
+    "name": "《第24屆音樂會》斗六高中校友管樂團",
+    "region": "雲林縣",
+    "venue": "雲林表演廳",
+    "address": "雲林縣斗六市大學路三段310號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-23",
+    "endDate": "2026-08-23",
+    "time": "14:30",
+    "desc": "索票入場。",
+    "link": "https://tixfun.com/UTK0201_?PRODUCT_ID=Q",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/yunlinperformance/"
+  },
+  {
+    "id": "chimei-03",
+    "name": "2026奇美音樂節:大提琴獨奏會(潘怡慈)",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-03",
+    "time": "14:30",
+    "desc": "抒情雋永的低吟魔法:德奧大提琴奏鳴曲經典,大提琴/潘怡慈、鋼琴/徐嘉琪,奇美廳。",
+    "link": "https://reurl.cc/OQ74G9",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/1053724273710009/"
+  },
+  {
+    "id": "chimei-04",
+    "name": "2026奇美音樂節:室內樂",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "time": "14:30",
+    "desc": "百煉鋼與繞指柔:克拉拉、舒曼與布拉姆斯的內心話,鄧皓敦、黃瑞儀、上地彩門、王佩瑤,奇美廳。",
+    "link": "https://reurl.cc/OQ74G9",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/1053724273710009/"
+  },
+  {
+    "id": "chimei-05",
+    "name": "2026奇美音樂節:交響音樂會",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-14",
+    "time": "14:30",
+    "desc": "山光水色,雨暴風狂:布拉姆斯與德弗札克的名曲盛宴,鋼琴/劉孟捷,指揮/范努斯敦,國立臺灣交響樂團。奇美音樂節系列,於衛武營演出。",
+    "link": "https://reurl.cc/OQ74G9",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/chimeimuseum/posts/pfbid02j49m52L29MGfgp7wu6oBzQCoSMoMVUxHfqBG5Nb5zWt5v6VSfjCCMgnu5R7zxeygl"
+  },
+  {
+    "id": "chimei-06",
+    "name": "奇美音樂節專題演講:回頭看才能向前行(焦元溥)",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "time": "14:30",
+    "desc": "簡談布拉姆斯的音樂與人生,主講焦元溥,奇美廳。",
+    "link": "https://reurl.cc/ppQyvZ",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/chimeimuseum/posts/pfbid0SpS8ce9aFDsDeUySU88RMwvLBU1o8aNBssHCCNfm2Y7Rx76ZtMZL2bbHa98XQpGdl"
+  },
+  {
+    "id": "chimei-07",
+    "name": "法老探險隊(親子主題活動)",
+    "region": "臺南市",
+    "venue": "奇美博物館",
+    "address": "臺南市仁德區文華路二段66號",
+    "types": [
+      "特殊季節活動",
+      "親子活動"
+    ],
+    "startDate": "2026-07-01",
+    "endDate": "2026-08-31",
+    "time": "10:00、14:30(週三除外)",
+    "desc": "《埃及之王》特展主題活動,暑假加開場次,約60分鐘,建議7-12歲親子參加,需先購買特展票再線上報名。",
+    "link": "https://chimeimuseum.fonticket.com/ticket/PC_activity",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/chimeimuseum/posts/pfbid02CVnGyANhUevAXrHzyiG1nXycgsxGAU2Fcu7Ge8E6tmLty2LoV3rxXNs4kzscRR8wl"
+  },
+  {
+    "id": "tnam-10",
+    "name": "黏膩關係展覽講座②被擠壓的內餡的獨白",
+    "region": "臺南市",
+    "venue": "臺南市美術館2館",
+    "address": "臺南市中西區忠義路二段1號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "time": "13:30-15:30",
+    "desc": "TAM⁺閱讀之森,主講藝術家蔡定邦、童品元,與談人陳寬育,憑當日入館門票免費參加。",
+    "link": "https://reurl.cc/NOA5b9",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid02KTK6S27woTh5frQ84aQCP66LjSYdVGh22TrR37o8fQwQg4ZJm84pPes1uJnjPX5Zl"
+  },
+  {
+    "id": "tnam-11",
+    "name": "搜查記×策展人專場導覽:親像彼寡死人骨頭的代誌",
+    "region": "臺南市",
+    "venue": "臺南市美術館1館",
+    "address": "臺南市中西區南門路37號",
+    "types": [
+      "導覽",
+      "表演"
+    ],
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "time": "19:00-20:30",
+    "desc": "講述式展演,講師陳昱清,地點中央廊道,費用288元。",
+    "link": "https://www.tnam.museum/event/detail/732",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/TainanArtMuseum/posts/pfbid027177wn4LVcyBiCfBWq2KZ5UHmacUze5oEVvMSzXvgBvsqpp9f3Kcbw4qLPiepo9kl"
+  },
+  {
+    "id": "ntmofa-05",
+    "name": "教師研習:把動畫變成教案",
+    "region": "臺中市",
+    "venue": "國立臺灣美術館",
+    "address": "臺中市西區五權西路一段2號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-25",
+    "time": "09:30-16:30",
+    "desc": "《Mr.Art和你說說畫》臺灣美術史動畫教案研習,3F工作坊,限額24名,對象為國中小高中職教師。",
+    "link": "https://reurl.cc/7YRjpN",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/ntmofa/posts/pfbid032n9UqyHgjFoWoyMd7dJ9L2UCstnVZCAckbTv2wZmxqPqGnsqUStPbSLEvkCtWftrl"
+  },
+  {
+    "id": "ntmofa-06",
+    "name": "《文字跑進作品裡了！》親子拓印工作坊",
+    "region": "臺中市",
+    "venue": "國立臺灣美術館",
+    "address": "臺中市西區五權西路一段2號",
+    "types": [
+      "工作坊",
+      "親子活動"
+    ],
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "time": "13:30-14:30、15:30-16:30",
+    "desc": "新加坡藝術家Hu Qiren拓印工作坊,3F工作坊,建議6歲以上家庭觀眾,線上報名。",
+    "link": "https://reurl.cc/nx7Ag1",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/ntmofa/posts/pfbid03n2hEbTTnaa8AmJTez82HPfPDXiN2bY9imdnjmNfdLzMsY6c9vjDTSTKP7M1ersFl"
+  },
+  {
+    "id": "ntmofa-07",
+    "name": "逐格之夢:從書頁到銀幕的動畫世界 書展",
+    "region": "臺中市",
+    "venue": "國立臺灣美術館",
+    "address": "臺中市西區五權西路一段2號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-11",
+    "endDate": "2027-01-17",
+    "time": "",
+    "desc": "藝術圖書中心3F,精選39本動畫相關書籍,展期間另有動畫講座與電影放映。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/ntmofa/posts/pfbid02RM2mEAgkfoQbMGXJUmnWNkQvnvVeQiGhLJKU3654A3QUQuYqJ6vUxvhukYrshyDMl"
+  },
+  {
+    "id": "cma-03",
+    "name": "嘉義市藝文激力協會會員聯展",
+    "region": "嘉義市",
+    "venue": "嘉義文創園區",
+    "address": "嘉義市西區中山路616號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-30",
+    "time": "09:00-17:00(週一休館)",
+    "desc": "水墨、油畫、水彩、書法、攝影、複合媒材等會員創作聯展,嘉義文創園區O棟1樓展覽室。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/Chiayi.Art.Museum/posts/pfbid0czw5STzywcEcpDaydEemF61o4FBaeM2guRsDsbMgeXzkMQ5JMrTYTQ4D3N3Rvy77l"
+  },
+  {
+    "id": "cma-04",
+    "name": "印在心裡的名字(七夕情人週限定)",
+    "region": "嘉義市",
+    "venue": "嘉義市立美術館",
+    "address": "嘉義市西區廣寧街101號",
+    "types": [
+      "特殊季節活動"
+    ],
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-23",
+    "time": "",
+    "desc": "七夕情人週限定,手型印章明信片活動,憑門票或市民證領取,限量發送。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/Chiayi.Art.Museum/posts/pfbid02pfNzVoZxfpAqQdB91VQqTnaLSFPv1TiMGst43QhJEkfWujb1TFqCLmsm5xdkgYfSl"
+  },
+  {
+    "id": "cma-05",
+    "name": "偏心的風景—耿傑生個展",
+    "region": "嘉義市",
+    "venue": "嘉義市立美術館",
+    "address": "嘉義市西區廣寧街101號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-11",
+    "endDate": "2026-10-11",
+    "time": "",
+    "desc": "側棟2樓特展廳,木雕與裝置創作,藝術家導覽場次8/23(日)14:00-15:00。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/Chiayi.Art.Museum/posts/pfbid02ZUi7ZVPNJAeQxm9GqFVUAZkwGEyRTcTFghWPniYm551s94cxd5bnqcDok4pvDcMzl"
+  },
+  {
+    "id": "cma-06",
+    "name": "Data-Verse Chiayi 02(嘉義宇宙)",
+    "region": "嘉義市",
+    "venue": "嘉義市立美術館",
+    "address": "嘉義市西區廣寧街101號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-05-01",
+    "endDate": "2026-11-29",
+    "time": "",
+    "desc": "古蹟棟3樓圖書室,數位藝術展覽,展覽藝術家2ENTER貳進,合作藝術家王德合、鄭建昌、戴明德。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/reel/2897489897265355/"
+  },
+  {
+    "id": "pt-museum-05",
+    "name": "刻畫人生—劉震崑個展",
+    "region": "屏東縣",
+    "venue": "屏東美術館",
+    "address": "屏東縣屏東市中正路74號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-20",
+    "time": "",
+    "desc": "本館202展覽室,木刻版畫個展,開幕8/16(日)10:00於201展覽室。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/pingtungartmuseum/posts/pfbid0FG6txfauuyxL1AwW5abDuKuompNeDQteetW8oVrGbU971TpCaM9bTVKaGP9u5HVKl"
+  },
+  {
+    "id": "pt-museum-06",
+    "name": "刻畫印記—魏秀敏個展",
+    "region": "屏東縣",
+    "venue": "屏東美術館",
+    "address": "屏東縣屏東市中正路74號",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-20",
+    "time": "",
+    "desc": "本館201展覽室,版畫、油畫、水墨個展,開幕8/16(日)10:00於201展覽室。",
+    "link": "",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/pingtungartmuseum/posts/pfbid02a6kNT8otpbFVrVUx9R9unHSsuwC9xq2VN8okbeCz1ArQAnUxXX8MGVyjZTWxh2wol"
+  },
+  {
+    "name": "銷夏:書畫中的夏日意象 特展",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "展覽",
+      "特展"
+    ],
+    "startDate": "2026-06-18",
+    "endDate": "2026-09-28",
+    "time": "09:00-17:00",
+    "desc": "故宮南院2樓S203展廳,展出以夏日意象為主題之書畫作品。",
+    "link": "https://south.npm.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/npmsouth/posts/pfbid02ANGHai8Veh36Ggh3riFRU967mgLuKe1MrHnWsKzJa2g63kWBsn68nqUpFSAcExgFl",
+    "id": "npm-s-17"
+  },
+  {
+    "name": "2026故宮南院水舞燈光展演",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "特殊季節活動"
+    ],
+    "startDate": "2026-06-26",
+    "endDate": "2026-08-30",
+    "time": "16:30-21:30(每15分鐘1場,每週一停演)",
+    "desc": "至善湖水舞展演,含情人節限定節目(8/15-8/23,8/17週一加演)。",
+    "link": "https://south.npm.gov.tw",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/npmsouth/posts/pfbid0LRzbaRj94HT3sH1oummier1hfVsoW4LbijGqygrcHvSYqvcVQr1aB5TR2hx8sJtdl",
+    "id": "npm-s-18"
+  },
+  {
+    "name": "絕妙好飾-毛根髮箍創作 手作體驗",
+    "region": "嘉義縣",
+    "venue": "國立故宮博物院南部院區",
+    "address": "嘉義縣太保市故宮大道888號",
+    "types": [
+      "工作坊",
+      "親子活動"
+    ],
+    "startDate": "2026-08-23",
+    "endDate": "2026-08-23",
+    "time": "15:30、16:30",
+    "desc": "博物館一樓兒創教室,毛根製作故宮文物造型髮箍,每份材料收費50元,額滿開放現場候補。",
+    "link": "https://npm.fonticket.com/tag/EducationalActivities",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/npmsouth/posts/pfbid02c98er4ah1i44SxPGrDTa61y9RJ44B6NJNogep1EuZDPEvYW1J3QqcurwFRvmpzjul",
+    "id": "npm-s-19"
+  },
+  {
+    "id": "wwy-01",
+    "name": "威爾第歌劇《遊唱詩人》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "歌劇",
+      "表演"
+    ],
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-06",
+    "time": "",
+    "desc": "衛武營年度旗艦歌劇,衛武營歌劇院演出。",
+    "link": "https://npacwwy.tw/en01FzeAv",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/reel/2064795294146834/"
+  },
+  {
+    "id": "wwy-02",
+    "name": "樹洞耳機電影院《交響人生》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "電影放映"
+    ],
+    "startDate": "2026-09-11",
+    "endDate": "2026-09-11",
+    "time": "19:00(18:30報到)",
+    "desc": "衛武營榕樹廣場,無線耳機戶外電影放映,免費報名,限量100名。",
+    "link": "https://npacwwy.tw/en11X36fi",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/weiwuyingcenterforthearts/posts/pfbid02qwrua2JFpWakSDM3vQ6p1vL5DAAjKU2CiKyNo9gHtm439gi4Ssv1btG8h832vqUYl"
+  },
+  {
+    "id": "wwy-03",
+    "name": "歌劇《Miedka:野性面容》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "歌劇"
+    ],
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-03",
+    "time": "14:30",
+    "desc": "衛武營表演廳,作曲家亞歷山大李維作品,票價800元。",
+    "link": "https://npacwwy.tw/en01WFBZj",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/weiwuyingcenterforthearts/posts/pfbid0324yVXZkejP13NmAyNeDaUFwXuLQ6Yur9gVCW7QkpuQH8RGW1SpQRdjvoZPqdo8kLl"
+  },
+  {
+    "id": "wwy-04",
+    "name": "春美歌劇團《伽羅香》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "歌仔戲",
+      "表演"
+    ],
+    "startDate": "2026-09-12",
+    "endDate": "2026-09-13",
+    "time": "",
+    "desc": "郭春美、孫凱琳、簡嘉誼領銜主演,衛武營歌劇院。",
+    "link": "https://npacwwy.tw/en09WjQNj",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/reel/2050331942541025/"
+  },
+  {
+    "id": "wwy-05",
+    "name": "衛武營八週年慶Open House《眾人的搖擺》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "特殊季節活動",
+      "表演"
+    ],
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-10",
+    "time": "18:20",
+    "desc": "衛武營戶外劇場,八週年慶壓軸活動。",
+    "link": "https://npacwwy.tw/en11dZZjy",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/weiwuyingcenterforthearts/posts/pfbid0ntHabhzsisn6FqqoWyhVLgHewLnVK5jNmSMNkatsKMkaqWjzjs8jnK3HC8fMqSaWl"
+  },
+  {
+    "id": "wwy-06",
+    "name": "簡文彬&拉特利&高雄市交響樂團《巔峰對話》",
+    "region": "高雄市",
+    "venue": "衛武營國家藝術文化中心",
+    "address": "高雄市鳳山區三多一路1號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "time": "",
+    "desc": "2026衛武營管風琴音樂節,衛武營音樂廳。",
+    "link": "https://npacwwy.tw/en01oZzQf",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/weiwuyingcenterforthearts/posts/pfbid02rcJYKMxvbwHRa8x3pk2sggEj2FFiqFjypNzjuHwxh7ehKNwSEeJi3yPbjeZDTdxzl"
+  },
+  {
+    "id": "pt-hall-01",
+    "name": "拉特利管風琴獨奏會《巴赫幻境》",
+    "region": "屏東縣",
+    "venue": "屏東演藝廳",
+    "address": "",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-14",
+    "time": "",
+    "desc": "2026衛武營管風琴音樂節,拉特利管風琴獨奏會,屏東演藝廳音樂廳。",
+    "link": "https://npacwwy.tw/en01MbMna",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/reel/28094932480194315/"
+  },
+  {
+    "id": "cyplat-02",
+    "name": "帶你認識韓國樂器工作坊",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "18:30",
+    "desc": "芙蕖廳,NEO-TRD分享韓國傳統樂器與音樂文化,票價50元。",
+    "link": "https://forms.gle/XusfrNpcTffq9v2U8",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/ChiayiTraditionalOrchestra/posts/pfbid0CUgyB861nUC69xoihLhqPNB8F7uiCSSpxRYRpvK4T1QKJMxvuRb7jVxXUv7yMEhGl"
+  },
+  {
+    "id": "cyplat-03",
+    "name": "2026朱宗慶打擊樂團擊樂劇場《六部曲》",
+    "region": "嘉義縣",
+    "venue": "嘉義縣表演藝術中心",
+    "address": "嘉義縣民雄鄉建國路二段265號",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "time": "14:30",
+    "desc": "演藝廳,朱宗慶打擊樂團40週年,OPENTIX售票。",
+    "link": "https://lihi1.me/Wy83w",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid0kEC22WRmxFQtC6MwgtsvU8giaKdcRT8F383dWEPCwQTEo4UCaGJMRhWC9iyZEhXol"
+  },
+  {
+    "id": "ncart-01",
+    "name": "六藝樂集《昭和酒場》少年仔來放送-台日歌謠故事音樂會",
+    "region": "嘉義縣",
+    "venue": "國立新港藝術高級中學演藝廳",
+    "address": "",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "time": "19:00",
+    "desc": "原訂9/13於嘉義縣表演藝術中心,因消防工程改至此場地演出。",
+    "link": "https://www.opentix.life/event/2061684207139819521",
+    "venueType": "音樂廳/表演藝術",
+    "fbUrl": "https://www.facebook.com/pac.cyhg.gov.tw/posts/pfbid0Wj3ZwBDvcdfe3YqNo7haUjZn5FR8rToHNCcc9mP9VYTwMjwcjSSNyz4LZx1Z3yhkl"
+  },
+  {
+    "id": "yoyo-04",
+    "name": "《爸爸的行李箱》謝安榆新書分享會",
+    "region": "高雄市",
+    "venue": "洋洋本屋",
+    "address": "高雄市三民區松江街59號",
+    "types": [
+      "分享會"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "14:30-16:30",
+    "desc": "國家人權博物館及木水月出版作品,白色恐怖受難家庭故事,自由入場需事前報名。",
+    "link": "https://forms.gle/w8pgbZG9BJapPSag6",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0TqBvZgCKi87FcTWBcvxesVnoheFNhXfPTeoTAia5JrKyREpcsmxjLW3EDxvftxB1l&id=61575104366732"
+  },
+  {
+    "id": "yoyo-05",
+    "name": "《阿銘的情緒天氣》台語SEL親子讀劇",
+    "region": "高雄市",
+    "venue": "洋洋本屋",
+    "address": "高雄市三民區松江街59號",
+    "types": [
+      "表演",
+      "親子活動"
+    ],
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-01",
+    "time": "14:30-15:30",
+    "desc": "台語SEL親子讀劇四地巡演高雄場,配合各書店規範酌收報名費。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0q2Zro7FJNDwERmctevrh8uXCig2yTESzdd6xbGHvtu8VFqKTNgbeCy2LD4hvgWUjl&id=61575104366732"
+  },
+  {
+    "id": "takao-02",
+    "name": "三餘走讀:印研中心回望戲獅甲印記",
+    "region": "高雄市",
+    "venue": "三餘書店 TaKaoBooks",
+    "address": "",
+    "types": [
+      "走讀"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "14:50",
+    "desc": "走讀帶領人陳坤毅,集合勞工教育生活中心一樓,費用150元。",
+    "link": "https://forms.gle/qSgpFzsouoJk58E56",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/takaobooks214/posts/pfbid029sDPkoNShhzFJBxxcSzCwpe7Hpp9HfXWDQYqSYgsex7P3qoX41YhNXrbRSVMZp4Pl"
+  },
+  {
+    "id": "sml-03",
+    "name": "繪本講座:探尋微小而珍貴的事",
+    "region": "高雄市",
+    "venue": "小房子書舖",
+    "address": "高雄市三民區(近李科永紀念圖書館)",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "14:00-16:00",
+    "desc": "阿布拉教育文化,講師郭妙芳/阿布拉總編輯,主題碧翠絲阿雷馬娜創作。",
+    "link": "https://forms.gle/y8XqVgUGwxqY6PcF9",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/littlehousebooks/posts/pfbid0rHX7wj3rMhSeWW8WSUjW5cvQxkPU4jKwbwYXxNcCQfvBFGrK7XinLYzmYLrGeSvEl"
+  },
+  {
+    "id": "sml-04",
+    "name": "小房子說故事活動:野獸來啦!一個撕標籤的挑戰",
+    "region": "高雄市",
+    "venue": "小房子書舖",
+    "address": "高雄市三民區(近李科永紀念圖書館)",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "11:00-12:00",
+    "desc": "說故事:看戲劇團,免費,對象大小朋友。",
+    "link": "https://forms.gle/aYJ6Rni6Cjsw5Suc8",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/littlehousebooks/posts/pfbid0rHX7wj3rMZCLpfRmnrwZs76dhjEb3VaTdQsrnnThqKimU7sRoAz2TUp7C88YvmzBl"
+  },
+  {
+    "id": "sml-05",
+    "name": "蒲公英故事閱讀推廣週五說故事",
+    "region": "高雄市",
+    "venue": "小房子書舖",
+    "address": "高雄市三民區(近李科永紀念圖書館)",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-21",
+    "time": "10:30-11:00",
+    "desc": "蒲公英故事閱讀推廣協會週五說故事活動。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/littlehousebooks/posts/pfbid032v1WyKzMjHaQTbpRu6se4RQc72zHxf9hA9cZ6RC96oyK4E4NLEC6PDE1s9H2N3p9l"
+  },
+  {
+    "id": "huya-09",
+    "name": "台語意識講座:你毋知影的台語",
+    "region": "嘉義市",
+    "venue": "洪雅書房",
+    "address": "嘉義市東區長榮街116號",
+    "types": [
+      "講座"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "14:00-15:50",
+    "desc": "Tâi-gí+1做伙行台語家庭計畫,講師蘇紋巧。",
+    "link": "https://forms.gle/eZf6EqbqcBFYduzz6",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/hoanyabookstore/posts/pfbid02HR3ArXk2NjvNx9cSh6pUt2jzJdDE1KgjTqcUwCA1oLkM1KHMbNy8E3BurpCj5NuKl"
+  },
+  {
+    "id": "huya-10",
+    "name": "青聚點課程:遊程設計-整合地方觀察與產出",
+    "region": "嘉義市",
+    "venue": "洪雅書房",
+    "address": "嘉義市東區長榮街116號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "10:00-17:00",
+    "desc": "島內散步魏兆廷、洪雅書房余國信、嘉有老木徐佳伶。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/hoanyabookstore/posts/pfbid0gdP5YF1nkK1pWwaH1KVyE32rbkrgs8cvbX6KxNsAvjR9G5pYDiZn4mS6XkaCdMVkl"
+  },
+  {
+    "id": "huya-11",
+    "name": "青聚點課程:循環手感-環保素材與永續操作",
+    "region": "嘉義市",
+    "venue": "洪雅書房",
+    "address": "嘉義市東區長榮街116號",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "time": "10:00-17:00",
+    "desc": "北藝大許勝發、絲田水舌孫崇傑、洪雅書房余國信。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/hoanyabookstore/posts/pfbid0gdP5YF1nkK1pWwaH1KVyE32rbkrgs8cvbX6KxNsAvjR9G5pYDiZn4mS6XkaCdMVkl"
+  },
+  {
+    "id": "huya-12",
+    "name": "諸羅里山學堂(最後一場)",
+    "region": "嘉義市",
+    "venue": "洪雅書房",
+    "address": "嘉義市東區長榮街116號",
+    "types": [
+      "走讀"
+    ],
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "time": "",
+    "desc": "林業及自然保育署嘉義分署主辦,今年最後一場諸羅里山學堂。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/hoanyabookstore/posts/pfbid0htYz22gnksmuar3WTrtgVoFxvU2LSA5byBEiJ1qH7Vk4ANxp9SaTcWA2RmYJH5HXl"
+  },
+  {
+    "id": "baiding-01",
+    "name": "地方編輯工作坊第二場",
+    "region": "臺南市",
+    "venue": "白丁書店",
+    "address": "臺南市白河區",
+    "types": [
+      "工作坊"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "10:00-13:00",
+    "desc": "一本小河事系列工作坊,包場暫不對外開放。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/baidingbook/posts/pfbid0ZnjKC9pLugVwg3hqTdyd1ubbiyDwrWhTa2Qfgvnj41pyP6DtCF3HhcvAjPbJGG4Xl"
+  },
+  {
+    "id": "everyman-01",
+    "name": "【走讀】用台語行踏五塊厝(九月場)",
+    "region": "高雄市",
+    "venue": "等閑書房",
+    "address": "",
+    "types": [
+      "走讀"
+    ],
+    "startDate": "2026-09-12",
+    "endDate": "2026-09-12",
+    "time": "09:00-12:00",
+    "desc": "苓雅區五塊厝,全程台語走讀,含台語家庭集點1點。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/everymantw/posts/pfbid037pPjo5KVCx9QUwf3iJ1Na9kY25erpKdTCmwrG38vDuNnnUtY5ARG4BN4Bieq4Hr2l"
+  },
+  {
+    "id": "everyman-02",
+    "name": "【走讀】用台語行踏五塊厝(十月場)",
+    "region": "高雄市",
+    "venue": "等閑書房",
+    "address": "",
+    "types": [
+      "走讀"
+    ],
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "time": "09:00-12:00",
+    "desc": "苓雅區五塊厝,全程台語走讀,含台語家庭集點1點,路線與九月場些許不同。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/everymantw/posts/pfbid037pPjo5KVCx9QUwf3iJ1Na9kY25erpKdTCmwrG38vDuNnnUtY5ARG4BN4Bieq4Hr2l"
+  },
+  {
+    "id": "everyman-03",
+    "name": "朱品璇繪本創作分享會",
+    "region": "高雄市",
+    "venue": "等閑書房",
+    "address": "",
+    "types": [
+      "分享會",
+      "工作坊"
+    ],
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "time": "14:00-16:00",
+    "desc": "繪本創作分享+故事接龍工作坊,講師朱品璇,特殊營業日限參加活動者入內。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/everymantw/posts/pfbid0v43pwGGt2S9i6FJAPk87PkWRNxFczdT3rQWKDp8qFu65VAPqpfyUNJxXbhhji1MPl"
+  },
+  {
+    "id": "qiu-01",
+    "name": "8月的談話:從房子開始的世界(8/15場)",
+    "region": "臺南市",
+    "venue": "秋書室",
+    "address": "",
+    "types": [
+      "座談"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "20:00",
+    "desc": "與談:周鳳翔、邱斯基,自由贊助入場(不可低於200元)。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/d.chunqiu494/posts/pfbid02UFm5fHkZ13LYr8Gc1W8L6Cwd3xNPg8yoYtrK7zeDvkFegLYjSLvPTZ6pczQFLQDhl"
+  },
+  {
+    "id": "qiu-02",
+    "name": "8月的談話:從房子開始的世界(8/29場)",
+    "region": "臺南市",
+    "venue": "秋書室",
+    "address": "",
+    "types": [
+      "座談"
+    ],
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "time": "19:00",
+    "desc": "與談:劉沁、郭亮廷,自由贊助入場(不可低於200元)。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/d.chunqiu494/posts/pfbid02UFm5fHkZ13LYr8Gc1W8L6Cwd3xNPg8yoYtrK7zeDvkFegLYjSLvPTZ6pczQFLQDhl"
+  },
+  {
+    "id": "wijazz-09",
+    "name": "自由即興工作坊(李毓庭)",
+    "region": "高雄市",
+    "venue": "爵式 WiJazz Records",
+    "address": "高雄市",
+    "types": [
+      "工作坊",
+      "音樂演出"
+    ],
+    "startDate": "2026-08-30",
+    "endDate": "2026-08-30",
+    "time": "13:00-17:30工作坊、19:30-21:30成果發表",
+    "desc": "鋼琴家李毓庭帶領,單人2200元(預先匯款)。",
+    "link": "https://forms.gle/qbnj4q6742wzPKJg7",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/wijazzrecords/posts/pfbid02mTisjGX6SZypFcmmyTwfXyiEaLXDjGcUVf3tLrm8H3kBxTnLaB9HmxPrZksy7WDHl"
+  },
+  {
+    "id": "wijazz-10",
+    "name": "四手聯彈(李毓庭、吳馬丁)",
+    "region": "高雄市",
+    "venue": "爵式 WiJazz Records",
+    "address": "高雄市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "20:00",
+    "desc": "李毓庭與吳馬丁鋼琴手風琴四手聯彈,單人500元/雙人900元。",
+    "link": "",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/wijazzrecords/posts/pfbid0kTWpAU9P45UTcxeBL8SmcS2fVqu1SbWxv26WSqAGQPmgrB9Lh3gJE8ccBSDwfkTWl"
+  },
+  {
+    "id": "madker-04",
+    "name": "李懿《我追逐的星星》",
+    "region": "高雄市",
+    "venue": "Madker Live House & Restaurant 美德客音樂餐酒館",
+    "address": "高雄市",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "time": "19:15-21:00",
+    "desc": "入場低消每人350元。",
+    "link": "",
+    "venueType": "音樂餐廳",
+    "fbUrl": "https://www.facebook.com/madkercafe/posts/pfbid02H6hxWKxeQxRyDPrfcfTZDTgdWtCjXYU7eaQMRxLweYKg4Niy9v97VRnyJaqMh3Ql"
+  },
+  {
+    "id": "madker-05",
+    "name": "謝佳宏《吉他歐巴》",
+    "region": "高雄市",
+    "venue": "Madker Live House & Restaurant 美德客音樂餐酒館",
+    "address": "高雄市",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "19:15-21:00",
+    "desc": "入場低消每人350元。",
+    "link": "",
+    "venueType": "音樂餐廳",
+    "fbUrl": "https://www.facebook.com/madkercafe/posts/pfbid0BXDCiAgWAysgfR8JbpTKraefED9hJCWFDH3TB2RfApyXBwpegrNTpyZMRdSdFdGSl"
+  },
+  {
+    "id": "nmtl-05",
+    "name": "2026故事聯合國:比利時繪本專場(8/15)",
+    "region": "臺南市",
+    "venue": "國立臺灣文學館",
+    "address": "臺南市中西區湯德章大道1號",
+    "types": [
+      "親子活動",
+      "分享會"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "10:30-11:30",
+    "desc": "B1文學樂園,比利時法語文化區際關係總署鄒宏平組長分享。",
+    "link": "",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/reel/2599888883795397/"
+  },
+  {
+    "id": "nmtl-06",
+    "name": "2026故事聯合國:比利時繪本專場(10/24)",
+    "region": "臺南市",
+    "venue": "國立臺灣文學館",
+    "address": "臺南市中西區湯德章大道1號",
+    "types": [
+      "親子活動",
+      "分享會"
+    ],
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-24",
+    "time": "10:30-11:30",
+    "desc": "B1文學樂園,Delphine De Temmerman分享《講故事給我聽嘛!》。",
+    "link": "",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/reel/2599888883795397/"
+  },
+  {
+    "id": "nmtl-07",
+    "name": "飛越文學天際線:夏曼．藍波安《大海浮夢》講座",
+    "region": "臺南市",
+    "venue": "國立臺灣文學館",
+    "address": "臺南市中西區湯德章大道1號",
+    "types": [
+      "講座",
+      "電影放映"
+    ],
+    "startDate": "2026-09-06",
+    "endDate": "2026-09-06",
+    "time": "14:00-17:00",
+    "desc": "演講廳,放映紀錄片並邀夏曼藍波安父子及譯者對談。",
+    "link": "",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/NmtlTainan/posts/pfbid05VXAQTfFNfCv8UesbbWdqbi7tvuQt1cCNTLHkmSgzKZMPkFKb5edJjCwag33CkMml"
+  },
+  {
+    "id": "chiayilib-02",
+    "name": "娃娃故事坊(9/12場)",
+    "region": "嘉義市",
+    "venue": "嘉義市圖書館(世賢圖書館)",
+    "address": "嘉義市西區世賢路一段685號",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-09-12",
+    "endDate": "2026-09-12",
+    "time": "10:00-12:00(2場次)",
+    "desc": "世賢圖書館1樓兒童閱覽室,從野獸國走回家、彩色怪獸,3-5歲親子。",
+    "link": "https://pse.is/9ggtw6",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/chiayicity.cultureman/posts/pfbid02ii4GdjTVKnVr5LS2dJufgZ7WmU8dj7tBRKJNihM3CFoy2GHgt2UJnTvnzhPJfCc1l"
+  },
+  {
+    "id": "chiayilib-03",
+    "name": "娃娃故事坊(9/19場)",
+    "region": "嘉義市",
+    "venue": "嘉義市圖書館(世賢圖書館)",
+    "address": "嘉義市西區世賢路一段685號",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-09-19",
+    "endDate": "2026-09-19",
+    "time": "10:00-12:00(2場次)",
+    "desc": "世賢圖書館1樓兒童閱覽室,越南民間故事(越南語搭配中文),3-5歲親子。",
+    "link": "https://pse.is/9ggtw6",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/chiayicity.cultureman/posts/pfbid02ii4GdjTVKnVr5LS2dJufgZ7WmU8dj7tBRKJNihM3CFoy2GHgt2UJnTvnzhPJfCc1l"
+  },
+  {
+    "id": "twlib-01",
+    "name": "烏克麗麗,足趣味!親子台語童趣謠",
+    "region": "嘉義市",
+    "venue": "台灣圖書室",
+    "address": "嘉義市東區中山路255號",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-15",
+    "time": "15:00-17:00",
+    "desc": "講師李子健,台語童謠與烏克麗麗,可台語家庭集點。",
+    "link": "https://www.beclass.com/rid=30527c76a75859ae4699",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/taiwanlib/posts/pfbid0t3xZabMML36BHESGoj5ZTErUtXgSVnD1D5GPri9f2P8MRkVzUmNG9AKp4j2PkGbol"
+  },
+  {
+    "id": "twlib-02",
+    "name": "台語繪本《和平與戰爭》《咱的日子》共讀",
+    "region": "嘉義市",
+    "venue": "台灣圖書室",
+    "address": "嘉義市東區中山路255號",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-08-16",
+    "endDate": "2026-08-16",
+    "time": "15:00-17:00",
+    "desc": "大腳小腳雲嘉親子共學團台語繪本講師群導讀,可台語家庭集點。",
+    "link": "https://www.beclass.com/rid=30527c76a75859ae4699",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/taiwanlib/posts/pfbid0t3xZabMML36BHESGoj5ZTErUtXgSVnD1D5GPri9f2P8MRkVzUmNG9AKp4j2PkGbol"
+  },
+  {
+    "id": "cymuseum-02",
+    "name": "市民BAR音樂會《銀河之夜》",
+    "region": "嘉義市",
+    "venue": "嘉義市立博物館",
+    "address": "",
+    "types": [
+      "音樂會"
+    ],
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "time": "18:30-20:00",
+    "desc": "1F大廳,嘉頌拉拉頌長號重奏團演出。",
+    "link": "https://pse.is/9fwuzq",
+    "venueType": "博物館/美術館",
+    "fbUrl": "https://www.facebook.com/cymmuseum/posts/pfbid0A9Nut1yFXr7XzBxbc33DMVeFZPqaPZBAvE3Py9dKVp5W8CCgWEcd1cstdhS2MSZEl"
+  },
+  {
+    "id": "takao-03",
+    "name": "三餘走讀:港都書香之埕:鹽埕冊店今昔",
+    "region": "高雄市",
+    "venue": "三餘書店 TaKaoBooks",
+    "address": "",
+    "types": [
+      "走讀"
+    ],
+    "startDate": "2026-08-23",
+    "endDate": "2026-08-23",
+    "time": "14:30",
+    "desc": "走讀帶領人陳坤毅,集合捷運鹽埕埔站4號出口,費用150元。",
+    "link": "https://forms.gle/WNtENZBxPNLnbpyT9",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/takaobooks214/posts/pfbid02gNkEmrypvALDyB7KZXAvKoXG7eakyFJM49LrN4NqWaCDk8bMWpg3wDsBxRvF1S8Kl"
+  },
+  {
+    "id": "central-05",
+    "name": "蔣勳《風荷．日麗》展覽",
+    "region": "臺中市",
+    "venue": "中央書局",
+    "address": "",
+    "types": [
+      "展覽"
+    ],
+    "startDate": "2026-08-07",
+    "endDate": "2026-09-06",
+    "time": "",
+    "desc": "中央書局1F,蔣勳文教基金會主辦,展覽現場播放蔣勳朗誦詩作〈風荷〉。",
+    "link": "",
+    "venueType": "獨立書店/書店",
+    "fbUrl": "https://www.facebook.com/centralbook.1927/posts/pfbid02R22ccuMy8d9ih3ooRCpLJ3CYPBxczG7jTzQfGYhwYaGEaN1MXLgjYxXbnc1dYzo9l"
+  },
+  {
+    "id": "chiayilib-04",
+    "name": "娃娃故事坊(9/5場)",
+    "region": "嘉義市",
+    "venue": "嘉義市圖書館(世賢圖書館)",
+    "address": "嘉義市西區世賢路一段685號",
+    "types": [
+      "親子活動"
+    ],
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "time": "10:00-12:00(2場次)",
+    "desc": "世賢圖書館1樓兒童閱覽室,抱抱綿羊、哇變動物,0-3歲親子。",
+    "link": "https://pse.is/9ggtw6",
+    "venueType": "圖書館/文學館",
+    "fbUrl": "https://www.facebook.com/chiayicity.cultureman/posts/pfbid02ii4GdjTVKnVr5LS2dJufgZ7WmU8dj7tBRKJNihM3CFoy2GHgt2UJnTvnzhPJfCc1l"
+  },
+  {
+    "id": "jhouse-04-3",
+    "name": "Daily Melody 8月場次(三):歐鑫瓚拉丁爵士",
+    "region": "臺南市",
+    "venue": "宅 · J House Coffee Bar & Jazz",
+    "address": "臺南市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-18",
+    "time": "21:30-22:30",
+    "desc": "每週二爵士現場,歐鑫瓚拉丁爵士,低消300/100元。",
+    "link": "https://lin.ee/lDJpXzt",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/jhouse.sja/posts/pfbid02h5oNa8KyMKnskg1z4zJ7pasQq4FgmoeZqZ5ZmwGxv21rVGiwBaH99HFWm8Kq2Yt3l"
+  },
+  {
+    "id": "jhouse-04-4",
+    "name": "Daily Melody 8月場次(四):Yannialwaysblue獨奏",
+    "region": "臺南市",
+    "venue": "宅 · J House Coffee Bar & Jazz",
+    "address": "臺南市",
+    "types": [
+      "音樂演出",
+      "爵士"
+    ],
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-25",
+    "time": "21:30-22:30",
+    "desc": "每週二爵士現場,Yannialwaysblue獨奏,低消300/100元。",
+    "link": "https://lin.ee/lDJpXzt",
+    "venueType": "爵士酒吧",
+    "fbUrl": "https://www.facebook.com/jhouse.sja/posts/pfbid02h5oNa8KyMKnskg1z4zJ7pasQq4FgmoeZqZ5ZmwGxv21rVGiwBaH99HFWm8Kq2Yt3l"
+  },
+  {
+    "id": "djbar-02-2",
+    "name": "老狼樂隊現場演唱(二)",
+    "region": "臺南市",
+    "venue": "DJ Bar & 黑膠唱片咖啡",
+    "address": "臺南市中西區西華南街120巷18號之4",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-08-22",
+    "endDate": "2026-08-22",
+    "time": "21:00入場",
+    "desc": "8月週六場次。",
+    "link": "https://www.facebook.com/djmusicpub666/posts/pfbid0LioYPhXKPv2mnfSuwCGAkiXrW7dhzsbQtnFP5TGPGQuNC3GPaXeWArVTNiJj8RT1l",
+    "venueType": "音樂餐廳",
+    "fbUrl": "https://www.facebook.com/djmusicpub666/posts/pfbid0LioYPhXKPv2mnfSuwCGAkiXrW7dhzsbQtnFP5TGPGQuNC3GPaXeWArVTNiJj8RT1l"
+  },
+  {
+    "id": "djbar-03-2",
+    "name": "Road House Band現場演唱(二)",
+    "region": "臺南市",
+    "venue": "DJ Bar & 黑膠唱片咖啡",
+    "address": "臺南市中西區西華南街120巷18號之4",
+    "types": [
+      "音樂演出"
+    ],
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-28",
+    "time": "21:00入場",
+    "desc": "8月週五場次。",
+    "link": "https://www.facebook.com/djmusicpub666/posts/pfbid0LioYPhXKPv2mnfSuwCGAkiXrW7dhzsbQtnFP5TGPGQuNC3GPaXeWArVTNiJj8RT1l",
+    "venueType": "音樂餐廳",
+    "fbUrl": "https://www.facebook.com/djmusicpub666/posts/pfbid0LioYPhXKPv2mnfSuwCGAkiXrW7dhzsbQtnFP5TGPGQuNC3GPaXeWArVTNiJj8RT1l"
+  }
+]
